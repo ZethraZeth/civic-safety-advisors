@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Keep template styles available; Tailwind can coexist */
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-slate-900;
+}
+
+/* Small polish so template + Tailwind feel consistent */
+.container {
+  /* Template uses bootstrap's container; keep it */
+}
+
+a {
+  @apply text-inherit;
+}
