@@ -1,11 +1,11 @@
-export type ServiceCategory = "policy" | "physical" | "emergency";
+export type ServiceCategory = "strategy" | "policy" | "physical" | "emergency";
 
 export interface Service {
   slug: string;
   title: string;
   shortDescription: string;
   fullDescription: string;
-  icon: "FileText" | "Users" | "Shield" | "Cctv" | "Siren" | "GraduationCap" | "Scale" | "ClipboardCheck" | "Building" | "Video" | "AlertTriangle" | "Briefcase" | "UserCheck";
+  icon: "Network" | "FileText" | "Users" | "Shield" | "Cctv" | "Siren" | "GraduationCap" | "Scale" | "ClipboardCheck" | "Building" | "Video" | "AlertTriangle" | "Briefcase" | "UserCheck";
   category: ServiceCategory;
   deliverables: string[];
   process: string[];
@@ -13,6 +13,30 @@ export interface Service {
 }
 
 export const services: Service[] = [
+  // CATEGORY 0: STRATEGY & COORDINATION
+  {
+    slug: "security-strategy-coordination",
+    title: "Security Strategy & Public Safety Coordination",
+    shortDescription: "Align public safety resources and private security investments to reduce risk, eliminate redundancy, and ensure effective response before, during, and after incidents.",
+    fullDescription: "We help organizations navigate the intersection between public safety resources and private security investments. Our approach ensures you understand what services are already available at no cost through local public safety agencies, when private security solutions are appropriate and cost-effective, and how to coordinate both without duplication, gaps, or wasted spend. This creates a clear, repeatable pathway for incident response, follow-up, and long-term security planning.",
+    icon: "Network",
+    category: "strategy",
+    deliverables: [
+      "Public Safety Navigation & Liaison: Guidance on when and how to engage law enforcement and emergency services, support during incident response and post-incident follow-up, assistance obtaining reports and required records",
+      "Public–Private Role Definition: Clear delineation of responsibilities between staff, private security, and public responders, avoidance of overlapping services and unnecessary spend",
+      "Security Spend Optimization: Evaluation of existing security contracts and services, identification of redundancy with public resources, budget-conscious recommendations aligned to real risk",
+      "Incident Pathway Design: Step-by-step response pathways for common scenarios, clear escalation thresholds, defined decision points for staff and leadership"
+    ],
+    process: [
+      "Assessment of current public safety relationships and private security arrangements",
+      "Analysis of available public resources and response capabilities",
+      "Identification of gaps, redundancies, and coordination opportunities",
+      "Development of integrated response pathways and role definitions",
+      "Implementation support and ongoing advisory"
+    ],
+    relatedServices: ["policy-procedure-review", "threat-vulnerability-assessment", "emergency-response-plans"]
+  },
+
   // CATEGORY 1: POLICY & COMPLIANCE
   {
     slug: "policy-procedure-review",
@@ -340,8 +364,15 @@ export const services: Service[] = [
   }
 ];
 
-// Filtered lists for homepage
-export const homeServices = services.slice(0, 6);
+// Filtered lists for homepage - lead with strategy, mix of policy/physical/emergency (exclude active shooter)
+export const homeServices = [
+  services[0],  // security-strategy-coordination (STRATEGY)
+  services[1],  // policy-procedure-review (POLICY)
+  services[4],  // threat-vulnerability-assessment (PHYSICAL)
+  services[7],  // emergency-response-plans (EMERGENCY)
+  services[5],  // building-access-control (PHYSICAL)
+  services[11], // staff-training (EMERGENCY)
+];
 
 // Helper functions
 export function getServiceBySlug(slug: string): Service | undefined {
@@ -362,6 +393,7 @@ export function getRelatedServices(serviceSlug: string): Service[] {
 }
 
 export const categoryLabels: Record<ServiceCategory, string> = {
+  strategy: "Security Strategy & Coordination",
   policy: "Policy & Compliance",
   physical: "Physical Security Assessment",
   emergency: "Emergency Preparedness & Training",

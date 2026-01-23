@@ -3,22 +3,22 @@ import { ShieldCheck, Puzzle, Users, FileBadge } from "lucide-react";
 const items = [
   {
     title: "Comprehensive Assessments",
-    desc: "Facility, policy, and preparedness reviews with clear priorities.",
+    desc: "Facility and policy reviews that prioritize actions after coordinating with public safety partners.",
     Icon: ShieldCheck,
   },
   {
     title: "Customized Solutions",
-    desc: "Recommendations tailored to your mission, culture, and constraints.",
+    desc: "Recommendations tailored to mission, budget reality, and what public resources can already provide.",
     Icon: Puzzle,
   },
   {
     title: "Expert Training Programs",
-    desc: "Practical training designed for staff, volunteers, and safety teams.",
+    desc: "Practical training executed within a defined strategic framework—not one-off drills.",
     Icon: Users,
   },
   {
     title: "Compliance Focused",
-    desc: "Guidance aligned to best practices and applicable requirements.",
+    desc: "Guidance built for defensibility and operational clarity, not bureaucracy.",
     Icon: FileBadge,
   },
 ];

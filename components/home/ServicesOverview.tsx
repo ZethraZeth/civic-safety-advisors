@@ -15,8 +15,12 @@ export function ServicesOverview() {
         <SectionHeading
           eyebrow="Services"
           title="How we help protect your organization"
-          subtitle="Assess, prioritize, and implement improvements that fit your environment—without disrupting the work you do for your community."
+          subtitle="We begin by aligning public safety resources with your private security efforts—establishing strategy before execution. The services below support that coordination, not the other way around."
         />
+
+        <p className="mt-6 max-w-3xl text-sm leading-6 text-slate-600">
+          Policy and compliance establish the framework. Physical security and training execute within it. Every recommendation reflects what makes strategic sense—not what can be sold.
+        </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {homeServices.map((s) => {

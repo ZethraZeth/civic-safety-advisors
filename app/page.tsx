@@ -32,15 +32,24 @@ export default function HomePage() {
               Expert security consulting for organizations that serve our communities
             </h1>
             <p className="mt-5 text-base leading-7 text-white/80 sm:text-lg">
-              Civic Safety Advisors provides comprehensive security assessments, policy development,
-              and training programs for houses of worship, schools, and public organizations.
+              We help organizations coordinate public safety resources with private security—reducing
+              redundancy, clarifying response pathways, and ensuring protective measures align with
+              mission and budget before investing in equipment or personnel.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Button href="/contact" className="justify-center">
+              <Button
+                href="/contact"
+                variant="brass"
+                className="justify-center"
+              >
                 Schedule a Consultation
               </Button>
-              <Button href="/services" variant="secondary" className="justify-center border-white text-white hover:bg-white hover:text-ink-900">
+              <Button
+                href="/services"
+                variant="secondary"
+                className="justify-center bg-white/12 border-white/60 text-white hover:bg-white/22 hover:border-white focus:ring-white/50"
+              >
                 View Our Services
               </Button>
             </div>

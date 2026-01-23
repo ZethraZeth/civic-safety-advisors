@@ -14,7 +14,7 @@ export function CTABanner() {
             </p>
           </div>
           <div className="flex gap-3">
-            <Button href="/contact" className="bg-white text-ink-900 hover:bg-slate-100 focus:ring-white">
+            <Button href="/contact" variant="brass">
               Contact Us Today
             </Button>
           </div>

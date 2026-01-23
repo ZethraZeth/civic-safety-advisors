@@ -23,3 +23,19 @@ body {
 a {
   @apply text-inherit;
 }
+
+/* Force desktop navigation to show/hide correctly */
+.desktop-nav,
+.desktop-button {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+
+  .desktop-button {
+    display: block !important;
+  }
+}

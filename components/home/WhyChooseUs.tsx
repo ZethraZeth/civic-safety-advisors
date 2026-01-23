@@ -9,12 +9,12 @@ const items = [
   {
     title: "Practical, actionable recommendations",
     text:
-      "No generic checklists. You get clear priorities, realistic options, and the “what to do next” that teams can actually execute.",
+      "No generic checklists or product catalogs. You get judgment on what not to buy, what public resources can handle, and what actually requires investment.",
   },
   {
     title: "Partnership approach",
     text:
-      "We can support implementation, train your people, and help you build a sustainable security culture—not just deliver a report.",
+      "We provide ongoing advisory support—not one-time reports. Sustained guidance as needs evolve, budgets shift, and coordination with public safety deepens.",
   },
 ];
 

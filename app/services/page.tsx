@@ -16,7 +16,7 @@ export const metadata = {
 };
 
 export default function ServicesPage() {
-  const categories: ServiceCategory[] = ["policy", "physical", "emergency"];
+  const categories: ServiceCategory[] = ["strategy", "policy", "physical", "emergency"];
 
   return (
     <main>
@@ -28,7 +28,8 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              Comprehensive security consulting tailored to mission-driven organizations.
+              We begin with strategy—coordinating public safety resources and private security investments.
+              Policy, physical security, and training follow as execution, not the starting point.
             </p>
           </div>
         </div>
@@ -121,8 +122,8 @@ export default function ServicesPage() {
             Not Sure Where to Start?
           </h2>
           <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
-            Many clients begin with a Threat & Vulnerability Assessment to identify
-            priorities. Contact us for a free initial consultation.
+            Most clients begin with Security Strategy & Public Safety Coordination—establishing
+            a clear pathway before investing in equipment or personnel. Contact us for a free initial consultation.
           </p>
           <div className="mt-8">
             <Button

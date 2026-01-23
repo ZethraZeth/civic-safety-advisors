@@ -52,7 +52,7 @@ export default function ContactPage() {
                   <Phone className="h-5 w-5 flex-shrink-0 text-brass-600" />
                   <div>
                     <p className="text-sm font-semibold text-ink-900">Phone</p>
-                    <p className="mt-1 text-sm text-slate-600">[XXX-XXX-XXXX]</p>
+                    <p className="mt-1 text-sm text-slate-600">(203) 676-8193</p>
                   </div>
                 </div>
 
@@ -71,7 +71,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm font-semibold text-ink-900">Location</p>
                     <p className="mt-1 text-sm text-slate-600">
-                      [City, State]
+                      Branford, Connecticut
                       <br />
                       Serving clients nationwide
                     </p>

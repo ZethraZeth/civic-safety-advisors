@@ -46,16 +46,13 @@ export function Footer() {
               </li>
               <li>
                 <span className="font-semibold text-white">Phone:</span>{" "}
-                [XXX-XXX-XXXX]
+                (203) 676-8193
               </li>
               <li>
                 <span className="font-semibold text-white">Location:</span>{" "}
-                [City, State]
+                Branford, Connecticut
               </li>
             </ul>
-            <div className="mt-4 text-sm text-white/60">
-              LinkedIn: [add URL]
-            </div>
           </div>
         </div>
 

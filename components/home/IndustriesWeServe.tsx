@@ -7,21 +7,21 @@ const items = [
     title: "Houses of Worship",
     text:
       "Churches, synagogues, mosques, and temples deserve to be sanctuaries of peace. We help ensure they stay that way.",
-    image: "/assets/images/service-single/img-1.jpg",
+    image: "/assets/images/industries/worship.jpg",
     href: "/industries#houses-of-worship",
   },
   {
     title: "Schools & Educational Institutions",
     text:
       "From K-12 to higher education, we help create safe learning environments for students and staff.",
-    image: "/assets/images/service-single/img-2.jpg",
+    image: "/assets/images/industries/school.jpg",
     href: "/industries#schools",
   },
   {
     title: "Nonprofits & Public Organizations",
     text:
       "Community centers, libraries, and public service organizations have unique security needs we understand.",
-    image: "/assets/images/service-single/img-3.jpg",
+    image: "/assets/images/industries/nonprofit.jpg",
     href: "/industries#nonprofits",
   },
 ];
