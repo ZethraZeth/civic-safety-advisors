@@ -63,26 +63,31 @@ export function ContactForm() {
 
     setStatus("submitting");
 
-    // Simulate form submission - replace with actual form handling
-    // You can use Formspree, Netlify Forms, or a custom API endpoint
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-
-      // For now, just log the form data
-      console.log("Form submitted:", formState);
-
-      setStatus("success");
-      setFormState({
-        name: "",
-        organization: "",
-        email: "",
-        phone: "",
-        organizationType: "",
-        inquiryType: "",
-        message: "",
-        contactMethod: "email",
+      const response = await fetch("https://formspree.io/f/xeeanbeb", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formState),
       });
-      setErrors({});
+
+      if (response.ok) {
+        setStatus("success");
+        setFormState({
+          name: "",
+          organization: "",
+          email: "",
+          phone: "",
+          organizationType: "",
+          inquiryType: "",
+          message: "",
+          contactMethod: "email",
+        });
+        setErrors({});
+      } else {
+        setStatus("error");
+      }
     } catch (error) {
       setStatus("error");
     }
