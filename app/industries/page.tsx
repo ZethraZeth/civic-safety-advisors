@@ -6,9 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Industries We Serve | Civic Safety Advisors",
+  title: "Industries We Serve in CT, NY, MA, RI | Civic Safety Advisors",
   description:
-    "Specialized security consulting for houses of worship, schools, educational institutions, nonprofits, and public organizations. Expert guidance tailored to your mission.",
+    "Specialized public safety consulting for Connecticut, New York, Massachusetts, and Rhode Island. Serving houses of worship, schools, nonprofits, municipalities, and healthcare organizations with mission-focused security solutions.",
 };
 
 export default function IndustriesPage() {
@@ -38,7 +38,8 @@ export default function IndustriesPage() {
         return (
           <section
             key={industry.slug}
-            className={idx % 2 === 0 ? "bg-white" : "bg-slate-50"}
+            id={industry.slug}
+            className={`scroll-mt-32 ${idx % 2 === 0 ? "bg-white" : "bg-slate-50"}`}
           >
             <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
               <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
@@ -49,6 +50,9 @@ export default function IndustriesPage() {
                   </h2>
                   <p className="mt-4 text-base leading-7 text-slate-600">
                     {industry.description}
+                  </p>
+                  <p className="mt-4 text-sm font-medium text-brass-700 bg-brass-500/5 border border-brass-500/20 rounded-lg px-4 py-3">
+                    We serve {industry.title.toLowerCase()} throughout Connecticut, New York, Massachusetts, and Rhode Island, with virtual consulting available nationwide.
                   </p>
 
                   <div className="mt-8">

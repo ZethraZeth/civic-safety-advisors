@@ -2,15 +2,18 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { categoryLabels, type ServiceCategory } from "@/lib/services";
 import { industries } from "@/lib/industries";
+import { locationSummaries } from "@/lib/locations";
 import { ChevronDown } from "lucide-react";
 
 const nav = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services", hasDropdown: true },
+  { href: "/locations", label: "Service Areas", hasDropdown: true },
   { href: "/industries", label: "Industries", hasDropdown: true },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
@@ -28,18 +31,24 @@ export function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-ink-900 text-white font-bold">
-              CSA
-            </span>
-            <div className="leading-tight">
-              <div className="text-sm font-extrabold tracking-wide text-ink-900">
+        <div className="flex h-32 items-center justify-between">
+          <Link href="/" className="flex items-center gap-4">
+            <div className="relative h-20 w-20 flex-shrink-0">
+              <Image
+                src="/assets/images/csa-logo.png"
+                alt="Civic Safety Advisors Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="flex flex-col items-center py-6">
+              <div className="text-lg font-bold tracking-wider text-ink-900 font-serif">
                 CIVIC SAFETY ADVISORS
               </div>
-              <div className="text-xs text-slate-500">Protecting What Matters Most</div>
+              <div className="w-60 border-t border-brass-500 my-1.5"></div>
+              <div className="text-xs font-normal tracking-wide text-slate-500">Protecting What Matters Most</div>
             </div>
           </Link>
 
@@ -63,39 +72,68 @@ export function Header() {
 
                 {/* Services Dropdown */}
                 {item.label === "Services" && activeDropdown === "Services" && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-slate-200 py-2 z-50">
-                    {serviceCategories.map((cat) => (
-                      <Link
-                        key={cat.key}
-                        href={`/services#${cat.key}`}
-                        className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brass-600"
-                      >
-                        {cat.label}
-                      </Link>
-                    ))}
-                    <div className="border-t border-slate-200 mt-2 pt-2">
-                      <Link
-                        href="/services"
-                        className="block px-4 py-2 text-sm font-semibold text-ink-900 hover:bg-slate-50 hover:text-brass-600"
-                      >
-                        View All Services →
-                      </Link>
+                  <div className="absolute top-full left-0 pt-2 z-50">
+                    <div className="w-64 bg-white rounded-lg shadow-lg border border-slate-200 py-2">
+                      {serviceCategories.map((cat) => (
+                        <Link
+                          key={cat.key}
+                          href={`/services#${cat.key}`}
+                          className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brass-600"
+                        >
+                          {cat.label}
+                        </Link>
+                      ))}
+                      <div className="border-t border-slate-200 mt-2 pt-2">
+                        <Link
+                          href="/services"
+                          className="block px-4 py-2 text-sm font-semibold text-ink-900 hover:bg-slate-50 hover:text-brass-600"
+                        >
+                          View All Services →
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Service Areas Dropdown */}
+                {item.label === "Service Areas" && activeDropdown === "Service Areas" && (
+                  <div className="absolute top-full left-0 pt-2 z-50">
+                    <div className="w-64 bg-white rounded-lg shadow-lg border border-slate-200 py-2">
+                      {locationSummaries.map((location) => (
+                        <Link
+                          key={location.slug}
+                          href={`/locations/${location.slug}`}
+                          className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brass-600"
+                        >
+                          {location.name}
+                        </Link>
+                      ))}
+                      <div className="border-t border-slate-200 mt-2 pt-2">
+                        <Link
+                          href="/locations"
+                          className="block px-4 py-2 text-sm font-semibold text-ink-900 hover:bg-slate-50 hover:text-brass-600"
+                        >
+                          View All Service Areas →
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 )}
 
                 {/* Industries Dropdown */}
                 {item.label === "Industries" && activeDropdown === "Industries" && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-slate-200 py-2 z-50">
-                    {industries.map((industry) => (
-                      <Link
-                        key={industry.slug}
-                        href={`/industries#${industry.slug}`}
-                        className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brass-600"
-                      >
-                        {industry.title}
-                      </Link>
-                    ))}
+                  <div className="absolute top-full left-0 pt-2 z-50">
+                    <div className="w-64 bg-white rounded-lg shadow-lg border border-slate-200 py-2">
+                      {industries.map((industry) => (
+                        <Link
+                          key={industry.slug}
+                          href={`/industries#${industry.slug}`}
+                          className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brass-600"
+                        >
+                          {industry.title}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
@@ -122,6 +160,19 @@ export function Header() {
 
         {open ? (
           <div className="md:hidden pb-4">
+            <div className="flex items-center justify-center gap-3 pt-4 pb-3 border-b border-slate-200">
+              <div className="relative h-12 w-12 flex-shrink-0">
+                <Image
+                  src="/assets/images/csa-logo.png"
+                  alt="Civic Safety Advisors Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="text-sm font-bold tracking-wider text-ink-900 font-serif">
+                CIVIC SAFETY ADVISORS
+              </div>
+            </div>
             <div className="flex flex-col gap-2 pt-2">
               {nav.map((item) => (
                 <div key={item.href}>
@@ -144,6 +195,22 @@ export function Header() {
                           onClick={() => setOpen(false)}
                         >
                           {cat.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Mobile Service Areas Submenu */}
+                  {item.label === "Service Areas" && (
+                    <div className="pl-6 mt-1 space-y-1">
+                      {locationSummaries.map((location) => (
+                        <Link
+                          key={location.slug}
+                          href={`/locations/${location.slug}`}
+                          className="block px-3 py-1.5 text-xs text-slate-600 hover:bg-slate-50 rounded"
+                          onClick={() => setOpen(false)}
+                        >
+                          {location.name}
                         </Link>
                       ))}
                     </div>

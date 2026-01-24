@@ -7,12 +7,18 @@
   color-scheme: light;
 }
 
+/* Smooth scrolling for hash links */
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   height: 100%;
 }
 
 body {
   @apply bg-white text-slate-900;
+  padding-top: 128px; /* Height of fixed header (h-32 = 128px) */
 }
 
 /* Small polish so template + Tailwind feel consistent */

@@ -4,9 +4,9 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Civic Safety Advisors | Protecting What Matters Most",
+  title: "Public Safety Consulting in CT, NY, MA, RI | Civic Safety Advisors",
   description:
-    "Expert security consulting for houses of worship, schools, nonprofits, and public organizations. Assessments, policy development, emergency planning, and training.",
+    "Strategic public safety consulting for Connecticut, New York, Massachusetts, and Rhode Island. Serving municipalities, nonprofits, schools, and healthcare organizations with security strategy, emergency planning, and training.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

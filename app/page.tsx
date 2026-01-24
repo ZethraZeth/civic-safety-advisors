@@ -2,8 +2,11 @@ import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { TrustIndicators } from "@/components/home/TrustIndicators";
 import { ServicesOverview } from "@/components/home/ServicesOverview";
+import { WhoWeServe } from "@/components/home/WhoWeServe";
+import { ServiceAreas } from "@/components/home/ServiceAreas";
 import { IndustriesWeServe } from "@/components/home/IndustriesWeServe";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
+import { FAQ } from "@/components/home/FAQ";
 import { RecentInsights } from "@/components/home/RecentInsights";
 import { CTABanner } from "@/components/home/CTABanner";
 
@@ -25,16 +28,17 @@ export default function HomePage() {
 
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold tracking-wide text-brass-500 uppercase">
+            <p className="text-sm font-semibold tracking-wide text-brass-500 uppercase font-serif">
               Civic Safety Advisors
             </p>
             <h1 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-              Expert security consulting for organizations that serve our communities
+              Practical Security Planning & Preparedness for Houses of Worship, Schools, and Public Organizations
             </h1>
             <p className="mt-5 text-base leading-7 text-white/80 sm:text-lg">
-              We help organizations coordinate public safety resources with private security—reducing
-              redundancy, clarifying response pathways, and ensuring protective measures align with
-              mission and budget before investing in equipment or personnel.
+              We help mission-driven organizations identify real risks, clarify response responsibilities, and make defensible security decisions—before spending money on guards, cameras, or training.
+            </p>
+            <p className="mt-4 text-sm font-bold text-brass-500">
+              Serving Connecticut, New York, Massachusetts, and Rhode Island
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -58,9 +62,12 @@ export default function HomePage() {
       </section>
 
       <TrustIndicators />
+      <WhoWeServe />
       <ServicesOverview />
+      <ServiceAreas />
       <IndustriesWeServe />
       <WhyChooseUs />
+      <FAQ />
       <RecentInsights />
       <CTABanner />
     </main>

@@ -10,9 +10,9 @@ import Link from "next/link";
 import * as Icons from "lucide-react";
 
 export const metadata = {
-  title: "Security Consulting Services | Civic Safety Advisors",
+  title: "Public Safety Consulting Services in CT, NY, MA, RI | Civic Safety Advisors",
   description:
-    "Comprehensive security consulting services including policy review, physical security assessment, threat analysis, emergency planning, and staff training for houses of worship, schools, and nonprofits.",
+    "Comprehensive public safety consulting services for Connecticut, New York, Massachusetts, and Rhode Island organizations. Security strategy, policy review, emergency planning, and training for nonprofits, schools, and municipalities.",
 };
 
 export default function ServicesPage() {
@@ -40,7 +40,7 @@ export default function ServicesPage() {
         const categoryServices = getServicesByCategory(category);
 
         return (
-          <section key={category} className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <section key={category} id={category} className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 scroll-mt-32">
             <div className="mb-10">
               <h2 className="text-2xl font-bold tracking-tight text-ink-900 sm:text-3xl">
                 {categoryLabels[category]}

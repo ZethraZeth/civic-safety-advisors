@@ -3,9 +3,9 @@ import { Card } from "@/components/ui/Card";
 import Image from "next/image";
 
 export const metadata = {
-  title: "About Us | Civic Safety Advisors",
+  title: "About Civic Safety Advisors | Public Safety Consulting in CT, NY, MA, RI",
   description:
-    "Learn about Civic Safety Advisors' mission to provide expert security consulting to organizations that serve the public good. Dedicated to protecting what matters most.",
+    "Public safety consulting for mission-driven organizations throughout Connecticut, New York, Massachusetts, and Rhode Island. Led by Seth Hershman, we coordinate public safety resources with private security to protect what matters most.",
 };
 
 export default function AboutPage() {

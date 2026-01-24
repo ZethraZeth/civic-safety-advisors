@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { services, getServiceBySlug, getRelatedServices } from "@/lib/services";
+import { locationSummaries } from "@/lib/locations";
 import Link from "next/link";
 import * as Icons from "lucide-react";
 import { notFound } from "next/navigation";
@@ -21,8 +22,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
-    title: `${service.title} | Civic Safety Advisors`,
-    description: service.fullDescription,
+    title: `${service.title} in CT, NY, MA, RI | Civic Safety Advisors`,
+    description: `${service.fullDescription.substring(0, 140)}... Serving Connecticut, New York, Massachusetts, and Rhode Island.`,
   };
 }
 
@@ -118,9 +119,43 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
+      {/* Where We Work */}
+      <section className="bg-slate-50">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-ink-900">
+              {service.title} Services Across Connecticut, New York, Massachusetts, and Rhode Island
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600">
+              We provide {service.title.toLowerCase()} services to mission-driven organizations throughout our primary service region in the Northeast. Whether you're a municipality in Connecticut, a nonprofit in New York, a school in Massachusetts, or a healthcare facility in Rhode Island, we bring the same strategic approach and practical expertise to every engagement.
+            </p>
+            <div className="mt-8">
+              <p className="text-sm font-semibold text-ink-900 mb-4">
+                Learn more about our work in each state:
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {locationSummaries.map((location) => (
+                  <Link
+                    key={location.slug}
+                    href={`/locations/${location.slug}`}
+                    className="flex items-center gap-3 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-ink-900 hover:border-brass-500 hover:text-brass-600 transition"
+                  >
+                    <Icons.MapPin className="h-5 w-5 text-brass-600 flex-shrink-0" />
+                    <span>Public Safety Consulting in {location.name}</span>
+                  </Link>
+                ))}
+              </div>
+              <p className="mt-6 text-sm text-slate-600">
+                We also provide virtual consulting services nationwide. Organizations outside our primary service region can access our expertise through remote assessments, policy reviews, and training program development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Services */}
       {relatedServices.length > 0 && (
-        <section className="bg-slate-50">
+        <section>
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold tracking-tight text-ink-900">
               Related Services
