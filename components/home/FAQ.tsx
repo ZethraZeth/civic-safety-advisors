@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Can you conduct on-site workshops for our New England school district?",
     answer:
-      "Absolutely. We regularly conduct on-site training, tabletop exercises, and workshops throughout the Northeast. For organizations within our primary service region (CT, NY, MA, RI), on-site engagements are standard. We can also arrange travel for on-site work anywhere in the United States when required for thorough assessments or hands-on training delivery.",
+      "Absolutely. We offer on-site training, tabletop exercises, and workshops throughout the Northeast. For organizations within our primary service region (CT, NY, MA, RI), on-site engagements are our standard approach. We can also arrange travel for on-site work anywhere in the United States when required for thorough assessments or hands-on training delivery.",
   },
   {
     question: "What types of organizations do you work with?",

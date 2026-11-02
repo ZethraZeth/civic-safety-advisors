@@ -24,7 +24,7 @@ export function WhyChooseUs() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Why us"
-          title="Why organizations trust Civic Safety Advisors"
+          title="Why choose Civic Safety Advisors"
           subtitle="Authoritative guidance, tailored to your environment and your budget reality."
         />
 
