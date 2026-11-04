@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 export const metadata: Metadata = {
   title: "Public Safety Consulting in CT, NY, MA, RI | Civic Safety Advisors",
   description:
-    "Strategic public safety consulting for Connecticut, New York, Massachusetts, and Rhode Island. Serving municipalities, nonprofits, schools, and healthcare organizations with security strategy, emergency planning, and training.",
+    "Strategic public safety consulting for Connecticut, New York, Massachusetts, and Rhode Island. Serving property management companies, housing providers, municipalities, nonprofits, schools, and healthcare organizations with security strategy, emergency planning, and training.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

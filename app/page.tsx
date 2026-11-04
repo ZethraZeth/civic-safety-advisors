@@ -32,7 +32,7 @@ export default function HomePage() {
               Civic Safety Advisors
             </p>
             <h1 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-              Practical Security Planning & Preparedness for Houses of Worship, Schools, and Public Organizations
+              Practical Security Planning & Preparedness for Property Managers, Houses of Worship, Schools, and Public Organizations
             </h1>
             <p className="mt-5 text-base leading-7 text-white/80 sm:text-lg">
               We help mission-driven organizations identify real risks, clarify response responsibilities, and make defensible security decisions—before spending money on guards, cameras, or training.

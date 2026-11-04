@@ -39,17 +39,42 @@ export const services: Service[] = [
 
   // CATEGORY 1: POLICY & COMPLIANCE
   {
+    slug: "workplace-violence-employee-safety",
+    title: "Workplace Violence & Employee Safety Assessment",
+    shortDescription: "Assess the risks your staff face from the public, clients, and residents, including lone-worker exposure, and build the procedures to manage them.",
+    fullDescription: "Most security assessments focus on the building. This one focuses on the people who work in it. We evaluate how your staff interact with the public, clients, residents, and applicants; where and when they work alone; what happens after hours; how incidents are reported and escalated; and what training and procedures exist today. The result is a written workplace violence prevention program sized to your organization, with recommendations ranked by cost and impact, written so it can be shared with leadership, your board, and your insurance broker.",
+    icon: "UserCheck",
+    category: "policy",
+    deliverables: [
+      "Workplace violence risk assessment by site and by role",
+      "Lone-worker and field-staff exposure evaluation with specific controls",
+      "Review of incident reporting procedures and escalation thresholds",
+      "Written workplace violence prevention program and policy templates",
+      "30-60-90 day action list ranked by cost and impact",
+      "Leadership or board readout"
+    ],
+    process: [
+      "Scoping call to confirm sites, roles, known concerns, and timeline",
+      "Review of policies, incident history, staffing patterns, and site layouts",
+      "Site visits and interviews with front-line staff, managers, and leadership",
+      "Analysis and recommendations",
+      "Report delivery, readout, and optional training"
+    ],
+    relatedServices: ["threat-vulnerability-assessment", "policy-procedure-review", "staff-training"]
+  },
+  {
     slug: "policy-procedure-review",
     title: "Review of Policies, Procedures & Post Orders",
-    shortDescription: "Evaluate and strengthen your security policies, procedures, and post orders.",
-    fullDescription: "Comprehensive evaluation of your existing security documentation to ensure policies align with industry best practices and your organization's specific needs. We review all security-related policies, procedures, and post orders to identify gaps, inconsistencies, and opportunities for improvement.",
+    shortDescription: "Evaluate and strengthen your security policies, incident reporting procedures, and post orders.",
+    fullDescription: "Comprehensive evaluation of your existing security documentation to ensure policies align with industry best practices and your organization's specific needs. We review all security-related policies, procedures, incident reporting and escalation procedures, and post orders to identify gaps, inconsistencies, and opportunities for improvement.",
     icon: "FileText",
     category: "policy",
     deliverables: [
       "Written assessment report with prioritized recommendations",
       "Gap analysis against industry best practices",
       "Updated policy templates and frameworks",
-      "Post order development and refinement"
+      "Post order development and refinement",
+      "Incident reporting form and escalation procedure"
     ],
     process: [
       "Document collection and review",
@@ -111,7 +136,7 @@ export const services: Service[] = [
     slug: "threat-vulnerability-assessment",
     title: "Threat & Vulnerability Assessment",
     shortDescription: "Identify risks and vulnerabilities before they become incidents.",
-    fullDescription: "Comprehensive facility threat analysis to identify security vulnerabilities and prioritize mitigation strategies. Our assessments provide a clear understanding of your risk profile and actionable recommendations to strengthen your security posture.",
+    fullDescription: "Comprehensive facility threat analysis to identify security vulnerabilities and prioritize mitigation strategies. Our assessments provide a clear understanding of your risk profile and actionable recommendations to strengthen your security posture. For organizations with multiple sites, we assess a representative sample or the full portfolio and deliver findings by property with portfolio-wide recommendations.",
     icon: "Shield",
     category: "physical",
     deliverables: [
@@ -128,7 +153,7 @@ export const services: Service[] = [
       "Risk prioritization",
       "Report delivery and action planning"
     ],
-    relatedServices: ["physical-security-review", "emergency-planning"]
+    relatedServices: ["physical-security-review", "workplace-violence-employee-safety", "emergency-response-plans"]
   },
   {
     slug: "building-access-control",

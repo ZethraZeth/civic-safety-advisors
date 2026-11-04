@@ -4,6 +4,13 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const items = [
   {
+    title: "Property Management & Housing Providers",
+    text:
+      "Staff who work alone, resident and applicant interactions, and multi-site portfolios. We assess employee safety and property security together.",
+    image: "/assets/images/industries/property.jpg",
+    href: "/industries#property-management-housing",
+  },
+  {
     title: "Houses of Worship",
     text:
       "Churches, synagogues, mosques, and temples deserve to be sanctuaries of peace. We help ensure they stay that way.",
@@ -36,7 +43,7 @@ export function IndustriesWeServe() {
           subtitle="Security programs that protect people and mission—without turning your space into a fortress."
         />
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((i) => (
             <div key={i.title} className="rounded-xl bg-white shadow-soft border border-slate-100 overflow-hidden">
               <div className="relative h-44">
