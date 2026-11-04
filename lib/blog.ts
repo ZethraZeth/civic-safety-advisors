@@ -297,7 +297,7 @@ export const recentPosts: BlogPost[] = [
     title: "Before You Buy Cameras for Your Apartment Buildings",
     excerpt:
       "Cameras are usually the first thing a property manager buys after an incident and the last thing that would have prevented it. What to fix first at a 30-unit building, and when cameras actually earn their cost.",
-    featuredImage: "/assets/images/blog/img-4.jpg",
+    featuredImage: "/assets/images/blog/cameras-apartment-building.jpg",
     category: "physical-security",
     publishedAt: "2025-01-18",
     readTime: 7,
