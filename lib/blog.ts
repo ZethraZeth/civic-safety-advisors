@@ -293,6 +293,71 @@ export const recentPosts: BlogPost[] = [
     `,
   },
   {
+    slug: "before-you-buy-cameras-apartment-buildings",
+    title: "Before You Buy Cameras for Your Apartment Buildings",
+    excerpt:
+      "Cameras are usually the first thing a property manager buys after an incident and the last thing that would have prevented it. What to fix first at a 30-unit building, and when cameras actually earn their cost.",
+    featuredImage: "/assets/images/blog/img-4.jpg",
+    category: "physical-security",
+    publishedAt: "2025-01-18",
+    readTime: 7,
+    content: `
+      <p>Something happens at one of your buildings. A resident's guest threatens the site manager in the parking lot. A stranger is found sleeping in a stairwell. A maintenance tech opens a unit for a work order and walks into a situation nobody warned him about. The next week, somebody on the ownership side asks the question property managers hear more than any other: "Can we get cameras in there?"</p>
+
+      <p>Sometimes the answer is yes. Usually it is "not yet." At a 20-, 30-, or 50-unit building, the things that most reduce risk to your staff and residents cost far less than a camera system and get done in a week instead of a quarter. This post walks through what to fix first, then what cameras are actually good for, so that if you do spend the money you spend it once.</p>
+
+      <h2>What a camera does and does not do</h2>
+      <p>A camera records. That is the whole job. It does not stop a confrontation in progress, it does not make a propped door close, and unless someone is watching the feed and can dispatch a response, it does not shorten the time between an incident starting and help arriving. At most small and mid-size residential properties nobody is watching the feed. The footage gets pulled afterward, if the system was working, if the angle was right, and if anyone knew how to export it.</p>
+
+      <p>That makes cameras an investigative tool and sometimes a deterrent. Both are real benefits. Neither is a substitute for the procedural controls below, which address the moment the incident is happening.</p>
+
+      <h2>Fix these first</h2>
+
+      <h3>1. Key and code control</h3>
+      <p>Walk the building and answer three questions. Who has a key or code to the front door, the mechanical rooms, and the office? When was the last time any of those were changed? What happens when an employee leaves or a resident moves out? At most properties nobody can answer the first question with confidence, and the answer to the second is "when we bought the building." Re-keying and rotating codes costs a few hundred dollars. Not knowing who can get into your building is the single most common finding in a residential security review, and no camera fixes it.</p>
+
+      <h3>2. Doors that actually close</h3>
+      <p>Propped doors, broken closers, and latches that do not catch are how unauthorized people get into buildings. Residents prop doors for convenience, deliveries, or a guest who does not have a key. Fixing closers and latches is a maintenance ticket, not a capital project. If the same door keeps getting propped, the fix is usually a procedural one: a sign, a conversation at the next resident meeting, and a consequence in the lease that management actually applies.</p>
+
+      <h3>3. Exterior lighting</h3>
+      <p>A dark parking lot or entry is where staff feel most exposed and where the incidents in your logs tend to cluster. Lighting is cheaper than cameras, works whether or not anyone is watching, and improves the footage if you add cameras later. Walk the property after dark with the site manager and note every spot where you would not want to be alone. Then fix those.</p>
+
+      <h3>4. A rule for who goes into occupied units, and when</h3>
+      <p>Maintenance staff enter occupied units every day. Most companies have no written rule about it. Write one. It should cover notice to the resident, what to do if the resident is not home and someone else answers, what to do if there are signs of a weapon, drugs, a hoarding condition, or a person in distress, and when a tech should leave and call for backup rather than finish the ticket. This is a page, not a manual. It protects your people and it protects you.</p>
+
+      <h3>5. A lone-worker check-in</h3>
+      <p>At small buildings there is often one site manager, and at smaller ones a manager who covers several buildings on a rotation. If that person is confronted in the office or the lot, who knows? A simple check-in rule, a text to a supervisor at set times or when starting a lease enforcement conversation, costs nothing and tells you within the hour if something is wrong. Phone apps that do this automatically exist and are inexpensive, but the rule matters more than the tool.</p>
+
+      <h3>6. A single incident reporting process</h3>
+      <p>Ask your site managers how they report an incident. If the answers differ by building, you do not have a process. Pick one form, one definition of what counts as an incident, one threshold for calling the regional manager the same day, and one place the reports go. The point is not paperwork. It is that a pattern at one building becomes visible to the people who can do something about it. Most companies discover they had five incidents involving the same resident only after the sixth one makes the news.</p>
+
+      <h3>7. Office layout</h3>
+      <p>Look at the leasing or management office from the point of view of a staff member alone with an angry visitor. Is there a second way out? Is the desk between the employee and the door, or between the employee and the wall? Can the office door be locked from inside quickly? Rearranging furniture is free. A second exit is sometimes a construction project, but knowing you do not have one changes how you staff the office and when you schedule difficult conversations.</p>
+
+      <h2>When cameras do earn their cost</h2>
+      <p>After the items above are handled, cameras make sense in specific cases:</p>
+      <ul>
+        <li><strong>A recurring problem at a specific location.</strong> Repeated vandalism in one stairwell, dumping behind one building, or break-ins to one storage area. A camera on that spot, with a sign, usually ends it or identifies who is doing it.</li>
+        <li><strong>Entry points, for after-the-fact identification.</strong> A camera on the front door and the parking lot entrance gives you a record of who came and went. That matters for a police report, an eviction case, or an insurance claim.</li>
+        <li><strong>Disputes you expect to end up in front of a judge or an adjuster.</strong> A camera in the leasing office lobby or at the management office door protects staff from false accusations as much as it protects residents.</li>
+        <li><strong>Properties where someone will actually watch.</strong> If you have a central office or a contracted monitoring service that will respond to what it sees, cameras become part of a response, not just a record.</li>
+      </ul>
+
+      <p>Before you sign, decide who is responsible for making sure the system is recording, who can export footage and how long it is kept, and what the policy is on sharing footage with residents and police. A system nobody maintains is worse than none, because people assume it works.</p>
+
+      <h2>What this looks like at a real building</h2>
+      <p>A 32-unit building with one part-time site manager. After a parking lot confrontation, ownership asked for a quote on cameras: eight exterior cameras, a recorder, installation, and a maintenance contract. Before spending that, the fixes that addressed the actual incident were: new exterior lighting on the lot, a written rule that guest parking enforcement happens in daylight with a second person or not at all, a check-in text to the regional manager before any enforcement conversation, and one incident form used across every building the company manages. Total cost was a fraction of the camera quote. Cameras went on the lot entrance later, for identification, once the lighting made the footage usable.</p>
+
+      <h2>For nonprofit and affordable housing owners</h2>
+      <p>Everything above applies with more force if you are a nonprofit housing provider or you manage affordable units. Budgets are tighter, buildings are often older, and your staff work with residents who may be in crisis more often than at a market-rate property. The procedural fixes are the ones you can afford, and they are the ones a funder, an insurance carrier, or a board will want to see documented. Cameras are a line item. A written lone-worker policy and a working incident reporting process are a program.</p>
+
+      <h2>Where to start</h2>
+      <p>Walk one building with the site manager and the list above. Write down what you find. If most of the seven items are already handled, you are in good shape and a camera conversation is reasonable. If they are not, you have your next month's work, and it will cost less than the camera quote on your desk.</p>
+
+      <p>If you would rather have an outside set of eyes on it, <a href="/contact">contact us</a>. We assess employee safety and property security across a portfolio and tell you what to fix first, and what not to buy.</p>
+    `,
+  },
+  {
     slug: "5-security-priorities-houses-of-worship",
     title: "5 Security Priorities Every House of Worship Should Address",
     excerpt:
