@@ -43,20 +43,21 @@ export default function HomePage() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button
-                href="/contact"
+                href="/assessment"
                 variant="brass"
                 className="justify-center"
               >
-                Schedule a Consultation
+                Take the Free Security Self-Assessment
               </Button>
               <Button
-                href="/services"
+                href="/contact"
                 variant="secondary"
                 className="justify-center bg-white/12 border-white/60 text-white hover:bg-white/22 hover:border-white focus:ring-white/50"
               >
-                View Our Services
+                Schedule a Consultation
               </Button>
             </div>
+            <p className="mt-3 text-sm text-white/60">20 minutes, no account. Get a score by area, a prioritized action list, and a PDF for your board or insurer.</p>
           </div>
         </div>
       </section>

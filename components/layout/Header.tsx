@@ -15,6 +15,7 @@ const nav = [
   { href: "/services", label: "Services", hasDropdown: true },
   { href: "/locations", label: "Service Areas", hasDropdown: true },
   { href: "/industries", label: "Industries", hasDropdown: true },
+  { href: "/assessment", label: "Self-Assessment" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
