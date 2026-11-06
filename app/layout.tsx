@@ -2,11 +2,30 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Analytics } from "@vercel/analytics/react";
+import { JsonLd, organizationLd, personLd } from "@/components/seo/JsonLd";
+import { SITE_URL, SITE_NAME, DESCRIPTION, OG_IMAGE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Public Safety Consulting in CT, NY, MA, RI | Civic Safety Advisors",
-  description:
-    "Strategic public safety consulting for Connecticut, New York, Massachusetts, and Rhode Island. Serving houses of worship, schools, property management companies, housing providers, nonprofits, municipalities, and healthcare organizations with security strategy, emergency planning, and training.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Security Consulting for Houses of Worship, Schools & Property Managers in Connecticut | Civic Safety Advisors",
+    template: "%s | Civic Safety Advisors",
+  },
+  description: DESCRIPTION,
+  applicationName: SITE_NAME,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    locale: "en_US",
+    url: SITE_URL,
+    title: "Civic Safety Advisors",
+    description: DESCRIPTION,
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Civic Safety Advisors" }],
+  },
+  twitter: { card: "summary_large_image", title: "Civic Safety Advisors", description: DESCRIPTION, images: [OG_IMAGE] },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -28,9 +47,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="stylesheet" href="/assets/css/style.css" />
       </head>
       <body>
+        <JsonLd data={[organizationLd(), personLd()]} />
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

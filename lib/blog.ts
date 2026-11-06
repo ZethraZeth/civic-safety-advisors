@@ -19,6 +19,9 @@ export interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
+  /** Two-sentence direct answer shown under the title. */
+  summary?: string;
+  updatedAt?: string; // ISO date, when materially revised
   content: string; // Full HTML content
   featuredImage: string;
   category: BlogCategory;
@@ -29,6 +32,7 @@ export interface BlogPost {
 export const recentPosts: BlogPost[] = [
   {
     slug: "emergency-response-planning-connecticut-synagogues",
+    summary: "Connecticut synagogues should build their emergency response plan with the local fire marshal, EMS, and police before an incident, not after. This guide covers who to contact, what to agree on in advance, and how to document it so the plan holds up in a drill and in a Nonprofit Security Grant application.",
     title: "Emergency Response Planning for Connecticut Synagogues: Coordinating with Fire, EMS, and Police",
     excerpt:
       "A practical guide for Connecticut synagogue leaders on building effective emergency response coordination with local first responders—from NSGP grants to multi-agency protocols.",
@@ -294,6 +298,7 @@ export const recentPosts: BlogPost[] = [
   },
   {
     slug: "before-you-buy-cameras-apartment-buildings",
+    summary: "Cameras rarely stop incidents at apartment buildings; they record them. Before buying, fix door hardware, lighting, key control, and staff procedures, then decide whether cameras are still the best use of the money.",
     title: "Before You Buy Cameras for Your Apartment Buildings",
     excerpt:
       "Cameras are usually the first thing a property manager buys after an incident and the last thing that would have prevented it. What to fix first at a 30-unit building, and when cameras actually earn their cost.",
@@ -359,6 +364,7 @@ export const recentPosts: BlogPost[] = [
   },
   {
     slug: "5-security-priorities-houses-of-worship",
+    summary: "The five things every house of worship should settle first are a named security lead, a working relationship with local police, controlled doors during services, a greeter team that knows what to watch for, and a response plan people have practiced. None of them requires buying equipment.",
     title: "5 Security Priorities Every House of Worship Should Address",
     excerpt:
       "A practical starting point: the five areas that most often drive risk and quick wins.",
@@ -447,6 +453,7 @@ export const recentPosts: BlogPost[] = [
   },
   {
     slug: "hiring-security-guards",
+    summary: "A security guard is only as useful as the post orders, supervision, and training behind them. Before hiring, define what the guard is there to do, confirm state licensing and insurance, and put the expectations in writing.",
     title: "What to Look for When Hiring Security Guards for Your Organization",
     excerpt:
       "Qualifications, interview questions, and red flags to avoid costly mistakes.",
@@ -587,6 +594,7 @@ export const recentPosts: BlogPost[] = [
   },
   {
     slug: "emergency-response-plan-where-to-start",
+    summary: "Start an emergency response plan by listing the five incidents most likely at your site and deciding who does what in the first ten minutes of each. Write that down, walk it with staff, and expand from there.",
     title: "Creating an Emergency Response Plan: Where to Start",
     excerpt:
       "A step-by-step approach for organizations that need a plan but don't know how to begin.",

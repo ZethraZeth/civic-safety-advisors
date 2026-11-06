@@ -10,7 +10,8 @@ import Link from "next/link";
 import * as Icons from "lucide-react";
 
 export const metadata = {
-  title: "Public Safety Consulting Services in CT, NY, MA, RI | Civic Safety Advisors",
+  title: "Security Consulting Services: Assessments, Plans, Training",
+  alternates: { canonical: "/services" },
   description:
     "Comprehensive public safety consulting services for Connecticut, New York, Massachusetts, and Rhode Island organizations. Security strategy, policy review, emergency planning, workplace violence assessment, and training for houses of worship, schools, property managers, nonprofits, and municipalities.",
 };

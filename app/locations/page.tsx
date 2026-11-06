@@ -5,7 +5,8 @@ import Link from "next/link";
 import { MapPin } from "lucide-react";
 
 export const metadata = {
-  title: "Service Areas: CT, NY, MA, RI | Civic Safety Advisors",
+  title: "Service Areas: Connecticut, New York, Massachusetts, Rhode Island",
+  alternates: { canonical: "/locations" },
   description:
     "Civic Safety Advisors serves mission-driven organizations throughout Connecticut, New York, Massachusetts, and Rhode Island. Virtual consultations nationwide.",
 };

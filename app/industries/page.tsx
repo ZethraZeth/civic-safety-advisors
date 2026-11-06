@@ -6,7 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Industries We Serve in CT, NY, MA, RI | Civic Safety Advisors",
+  title: "Industries: Houses of Worship, Schools, Property Management, Nonprofits",
+  alternates: { canonical: "/industries" },
   description:
     "Specialized public safety consulting for Connecticut, New York, Massachusetts, and Rhode Island. Serving houses of worship, schools, property management companies, housing providers, nonprofits, and municipalities with practical security assessments and planning.",
 };
@@ -48,6 +49,9 @@ export default function IndustriesPage() {
                   <h2 className="text-3xl font-bold tracking-tight text-ink-900">
                     {industry.title}
                   </h2>
+                  {industry.answer && (
+                    <p className="mt-4 text-lg leading-8 text-slate-700">{industry.answer}</p>
+                  )}
                   <p className="mt-4 text-base leading-7 text-slate-600">
                     {industry.description}
                   </p>

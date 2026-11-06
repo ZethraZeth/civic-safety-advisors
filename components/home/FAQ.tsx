@@ -1,6 +1,14 @@
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import Link from "next/link";
+import { JsonLd, faqLd } from "@/components/seo/JsonLd";
 
 const faqs = [
+  {
+    question: "Can you do the vulnerability assessment required for the Nonprofit Security Grant Program?",
+    answer:
+      "Yes. Both the federal NSGP and the Connecticut NSGP require a site-specific vulnerability assessment, and Connecticut accepts one from a security contractor. We walk the site, write the assessment, and align it to the Investment Justification so the requested items match the documented risks. See our Connecticut Nonprofit Security Grant guide for deadlines and eligibility.",
+    href: "/connecticut-nonprofit-security-grant",
+  },
   {
     question: "Do you provide virtual safety consulting for nonprofits nationwide?",
     answer:
@@ -31,6 +39,7 @@ const faqs = [
 export function FAQ() {
   return (
     <section className="py-16 sm:py-20 bg-slate-50">
+      <JsonLd data={faqLd(faqs)} />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Frequently Asked Questions"
@@ -43,6 +52,9 @@ export function FAQ() {
             <div key={idx} className="rounded-xl bg-white p-6 shadow-soft border border-slate-100">
               <h3 className="text-lg font-semibold text-ink-900">{faq.question}</h3>
               <p className="mt-3 text-sm leading-6 text-slate-600">{faq.answer}</p>
+              {"href" in faq && faq.href && (
+                <Link href={faq.href} className="mt-2 inline-block text-sm font-semibold text-ink-900 hover:underline">Read the guide →</Link>
+              )}
             </div>
           ))}
         </div>

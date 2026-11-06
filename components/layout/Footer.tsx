@@ -6,7 +6,8 @@ const links = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/industries", label: "Industries" },
-  { href: "/assessment", label: "Self-Assessment" },
+  { href: "/assessment", label: "Free Self-Assessment" },
+  { href: "/connecticut-nonprofit-security-grant", label: "CT Nonprofit Security Grant Guide" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];

@@ -3,7 +3,8 @@ import { Card } from "@/components/ui/Card";
 import Image from "next/image";
 
 export const metadata = {
-  title: "About Civic Safety Advisors | Public Safety Consulting in CT, NY, MA, RI",
+  title: "About Seth Hershman and Civic Safety Advisors",
+  alternates: { canonical: "/about" },
   description:
     "Public safety consulting for mission-driven organizations throughout Connecticut, New York, Massachusetts, and Rhode Island. Led by Seth Hershman, we coordinate public safety resources with private security to protect what matters most.",
 };
@@ -18,8 +19,8 @@ export default function AboutPage() {
             <h1 className="text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl">
               About Civic Safety Advisors
             </h1>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
-              Strategic advisors helping organizations coordinate public safety resources with private security investments.
+            <p className="mt-5 text-lg leading-8 text-slate-700">
+              Civic Safety Advisors is a security consulting firm in Branford, Connecticut, founded by Seth Hershman, a former Yale University Police detective and Connecticut DESPP policy advisor. We assess risk, write emergency plans, and train staff for houses of worship, schools, property managers, and public organizations, and we do not sell guards, cameras, or alarm systems.
             </p>
           </div>
         </div>

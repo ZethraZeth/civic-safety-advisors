@@ -3,6 +3,8 @@ export interface Location {
   name: string;
   abbreviation: string;
   description: string;
+  /** Two-sentence direct answer shown first; written to be quoted by search and AI engines. */
+  answer?: string;
   localContext: string;
   metaDescription: string;
   whoWeServe: string[];
@@ -16,6 +18,7 @@ export interface Location {
 export const locations: Location[] = [
   {
     slug: "connecticut",
+    answer: "Civic Safety Advisors is based in Branford, Connecticut and serves houses of worship, schools, property managers, and nonprofits across the state with on-site security assessments, emergency plans, and training. We prepare the vulnerability assessments that the federal Nonprofit Security Grant Program and the Connecticut NSGP require.",
     name: "Connecticut",
     abbreviation: "CT",
     description: "Civic Safety Advisors provides comprehensive public safety consulting services to Connecticut organizations, from municipalities implementing Vision Zero initiatives to nonprofits strengthening emergency preparedness programs.",
@@ -59,6 +62,7 @@ export const locations: Location[] = [
   },
   {
     slug: "new-york",
+    answer: "We serve New York organizations from Westchester and the Hudson Valley to New York City with on-site security assessments, emergency planning, and staff training. Work is coordinated with local police and fire departments and written to support New York's NSGP applications.",
     name: "New York",
     abbreviation: "NY",
     description: "Civic Safety Advisors serves New York organizations with strategic public safety consulting—helping municipalities, nonprofits, schools, and healthcare facilities develop effective security programs that align with local resources and organizational missions.",
@@ -102,6 +106,7 @@ export const locations: Location[] = [
   },
   {
     slug: "massachusetts",
+    answer: "We serve Massachusetts houses of worship, schools, housing providers, and nonprofits with security assessments, emergency plans, and training, on site in the Boston area and western Massachusetts and virtually statewide. Reports are written to support the state's NSGP and insurer requirements.",
     name: "Massachusetts",
     abbreviation: "MA",
     description: "Civic Safety Advisors provides public safety consulting throughout Massachusetts, helping municipalities, educational institutions, nonprofits, and healthcare organizations develop strategic security programs grounded in local partnerships and practical implementation.",
@@ -145,6 +150,7 @@ export const locations: Location[] = [
   },
   {
     slug: "rhode-island",
+    answer: "We serve Rhode Island organizations statewide with security assessments, emergency planning, and training delivered on site. Reports are written to support NSGP applications administered by the Rhode Island Emergency Management Agency.",
     name: "Rhode Island",
     abbreviation: "RI",
     description: "Civic Safety Advisors serves Rhode Island organizations with strategic public safety consulting—helping municipalities, nonprofits, schools, and community organizations develop effective security programs that coordinate with local resources and respect budget realities.",

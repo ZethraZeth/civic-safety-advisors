@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/Button";
 import { SampleResults } from "@/components/assessment/SampleResults";
 import { Clock, UserRound, ShieldCheck, FileText } from "lucide-react";
+import { JsonLd, faqLd } from "@/components/seo/JsonLd";
 
 const ASSESS_URL = "https://assess.civicsafetyadvisors.com";
 
 export const metadata = {
-  title: "Free Security Self-Assessment | Civic Safety Advisors",
+  title: "Free Security Self-Assessment",
+  alternates: { canonical: "/assessment" },
   description:
     "A free 20-minute security self-assessment for houses of worship, housing providers, schools, nonprofits, and clinics in Connecticut. Get a score by area, a prioritized action list with costs, and a PDF for your board, insurer, or grant application.",
 };
@@ -32,13 +34,14 @@ const areas = [
 const faqs = [
   ["Who should fill it out?", "One person who knows the building and the staff: an executive director, property manager, head of school, administrator, or safety committee lead. Walk the building first if you can."],
   ["What happens to my answers?", "Organization name, contact details, and answers are encrypted before they are stored. Our records show only a reference code, organization type, county, and summary scores. Everything is deleted after 12 months unless you ask us to keep it. We do not sell or share it."],
-  ["Can I use this for a security grant?", "The PDF is written to support federal and Connecticut Nonprofit Security Grant Program applications. It does not replace the site-specific vulnerability assessment the federal program requires, but it is a strong starting point, and we can do the full assessment if you need one."],
+  ["Can I use this for a security grant?", "The PDF is written to support federal and Connecticut Nonprofit Security Grant Program applications. It does not replace the site-specific vulnerability assessment the federal program requires, but it is a strong starting point, and we can do the full assessment if you need one. Our Connecticut Nonprofit Security Grant guide at /connecticut-nonprofit-security-grant covers deadlines and eligibility."],
   ["How is this different from the CISA tool?", "The questions are adapted from CISA's public-domain Houses of Worship Security Self-Assessment. We added questions on lone workers, aggressive interactions, keys and doors, lighting, and incident reporting; made the scales consistent; added examples for five organization types; and built the scoring, prioritization, and PDF."],
 ];
 
 export default function AssessmentPage() {
   return (
     <main>
+      <JsonLd data={faqLd(faqs.map(([question, answer]) => ({ question, answer })))} />
       {/* Hero: pitch on the left, sample output on the right */}
       <section className="bg-slate-50 border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">

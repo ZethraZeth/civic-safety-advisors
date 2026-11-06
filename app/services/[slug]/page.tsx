@@ -5,6 +5,7 @@ import { locationSummaries } from "@/lib/locations";
 import Link from "next/link";
 import * as Icons from "lucide-react";
 import { notFound } from "next/navigation";
+import { JsonLd, serviceLd, breadcrumbLd } from "@/components/seo/JsonLd";
 
 export async function generateStaticParams() {
   return services.map((service) => ({
@@ -22,8 +23,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
-    title: `${service.title} in CT, NY, MA, RI | Civic Safety Advisors`,
-    description: `${service.fullDescription.substring(0, 140)}... Serving Connecticut, New York, Massachusetts, and Rhode Island.`,
+    title: service.title,
+    description: service.answer ?? service.shortDescription,
+    alternates: { canonical: `/services/${service.slug}` },
   };
 }
 
@@ -40,6 +42,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
   return (
     <main>
+      <JsonLd data={[serviceLd(service), breadcrumbLd([{ name: "Services", path: "/services" }, { name: service.title, path: `/services/${service.slug}` }])]} />
       {/* Hero Section */}
       <section className="bg-slate-50">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
@@ -54,7 +57,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               <h1 className="text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">
                 {service.title}
               </h1>
-              <p className="mt-3 text-lg text-slate-600">{service.shortDescription}</p>
+              <p className="mt-3 text-lg leading-8 text-slate-700">{service.answer ?? service.shortDescription}</p>
             </div>
           </div>
         </div>

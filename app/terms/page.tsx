@@ -1,5 +1,6 @@
 export const metadata = {
-  title: "Terms of Service | Civic Safety Advisors",
+  title: "Terms of Service",
+  alternates: { canonical: "/terms" },
   description: "Terms of Service for Civic Safety Advisors",
 };
 

@@ -2,7 +2,8 @@ import { recentPosts } from "@/lib/blog";
 import { BlogGrid } from "@/components/blog/BlogGrid";
 
 export const metadata = {
-  title: "Public Safety Insights & Resources | Civic Safety Advisors Blog",
+  title: "Security Planning Blog",
+  alternates: { canonical: "/blog" },
   description:
     "Practical public safety guidance for Connecticut, New York, Massachusetts, and Rhode Island organizations. Expert perspectives on protecting houses of worship, schools, nonprofits, and municipalities.",
 };

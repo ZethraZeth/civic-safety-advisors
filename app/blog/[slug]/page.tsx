@@ -1,9 +1,10 @@
 import { recentPosts, categoryLabels, getPostBySlug } from "@/lib/blog";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { Button } from "@/components/ui/Button";
-import { Calendar, Clock } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { Byline } from "@/components/blog/Byline";
+import { JsonLd, articleLd, breadcrumbLd } from "@/components/seo/JsonLd";
 
 export async function generateStaticParams() {
   return recentPosts.map((post) => ({
@@ -21,8 +22,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
-    title: `${post.title} | Civic Safety Advisors Blog`,
+    title: post.title,
     description: post.excerpt,
+    alternates: { canonical: `/blog/${post.slug}` },
+    openGraph: { type: "article", publishedTime: post.publishedAt, modifiedTime: post.updatedAt ?? post.publishedAt, authors: ["Seth Hershman"], images: [{ url: post.featuredImage }] },
   };
 }
 
@@ -46,6 +49,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <main>
+      <JsonLd data={[articleLd(post), breadcrumbLd([{ name: "Blog", path: "/blog" }, { name: post.title, path: `/blog/${post.slug}` }])]} />
       {/* Post Header */}
       <article className="bg-slate-50">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
@@ -59,18 +63,11 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             {post.title}
           </h1>
 
-          <div className="mt-6 flex items-center gap-6 text-sm text-slate-600">
-            <div className="flex items-center gap-2">
-              <Calendar className="h-4 w-4" />
-              <time dateTime={post.publishedAt}>{formattedDate}</time>
-            </div>
-            {post.readTime && (
-              <div className="flex items-center gap-2">
-                <Clock className="h-4 w-4" />
-                <span>{post.readTime} min read</span>
-              </div>
-            )}
-          </div>
+          {post.summary && (
+            <p className="mt-6 text-lg leading-8 text-slate-700 border-l-4 border-brass-500 pl-4">{post.summary}</p>
+          )}
+
+          <Byline publishedAt={post.publishedAt} updatedAt={post.updatedAt} readTime={post.readTime} />
         </div>
       </article>
 

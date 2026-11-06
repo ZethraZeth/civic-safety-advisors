@@ -22,7 +22,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
-    title: `Public Safety Consulting in ${location.name} | Civic Safety Advisors`,
+    title: `Security Consulting in ${location.name}`,
+    alternates: { canonical: `/locations/${location.slug}` },
     description: location.metaDescription,
   };
 }
@@ -44,11 +45,12 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
               Service Area
             </div>
             <h1 className="mt-2 text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl">
-              Public Safety Consulting in {location.name}
+              Security Consulting in {location.name}
             </h1>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
-              {location.description}
+            <p className="mt-5 text-lg leading-8 text-slate-700">
+              {location.answer ?? location.description}
             </p>
+            {location.answer && <p className="mt-4 text-base leading-7 text-slate-600">{location.description}</p>}
           </div>
         </div>
       </section>

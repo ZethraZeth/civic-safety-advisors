@@ -3,7 +3,8 @@ import { Card } from "@/components/ui/Card";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Contact Civic Safety Advisors | Branford, CT | Serving CT, NY, MA, RI",
+  title: "Contact Us | Branford, CT",
+  alternates: { canonical: "/contact" },
   description:
     "Contact Civic Safety Advisors in Branford, Connecticut at (203) 676-8193. Serving mission-driven organizations throughout Connecticut, New York, Massachusetts, and Rhode Island. Schedule a free consultation.",
 };

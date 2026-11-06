@@ -1,5 +1,6 @@
 export const metadata = {
-  title: "Privacy Policy | Civic Safety Advisors",
+  title: "Privacy Policy",
+  alternates: { canonical: "/privacy" },
   description: "Privacy Policy for Civic Safety Advisors",
 };
 
