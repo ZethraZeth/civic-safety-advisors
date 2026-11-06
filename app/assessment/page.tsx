@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/Button";
 import { SampleResults } from "@/components/assessment/SampleResults";
 import { Clock, UserRound, ShieldCheck, FileText } from "lucide-react";
+import { ASSESS_URL } from "@/lib/site";
 import { JsonLd, faqLd } from "@/components/seo/JsonLd";
 
-const ASSESS_URL = "https://assess.civicsafetyadvisors.com";
 
 export const metadata = {
   title: "Free Security Self-Assessment",
@@ -16,14 +16,14 @@ const facts = [
   { Icon: Clock, text: "20 minutes, about 25 questions" },
   { Icon: UserRound, text: "No account, no cost, no sales call" },
   { Icon: ShieldCheck, text: "Your answers are encrypted and deleted after 12 months" },
-  { Icon: FileText, text: "PDF emailed to you when you finish" },
+  { Icon: FileText, text: "Summary emailed to you; full PDF report with a free 30-minute consultation" },
 ];
 
 const steps = [
   ["Pick your organization type", "House of worship, housing provider, school, nonprofit, or clinic. Questions and examples adjust to your setting."],
   ["Answer the questions", "One screen at a time. Each has a help note and an example. Answers save as you go, so you can stop and come back."],
   ["Enter where the report should go", "Organization name and contact details, encrypted before they are stored."],
-  ["Get your results", "Scores on screen, the PDF in your inbox. The link closes once you finish."],
+  ["Get your results", "Scores by area, your ten highest-impact fixes, and a summary email. The full report, with every recommendation, comes with a free 30-minute consultation."],
 ];
 
 const areas = [

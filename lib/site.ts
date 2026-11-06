@@ -8,7 +8,10 @@ export const EMAIL = "info@civicsafetyadvisors.com";
 export const CITY = "Branford";
 export const STATE = "CT";
 export const SERVICE_STATES = ["Connecticut", "New York", "Massachusetts", "Rhode Island"];
-export const ASSESS_URL = "https://assess.civicsafetyadvisors.com";
+/** Public (teaser) assessment start page, served on this domain and proxied to the assessment app. */
+export const ASSESS_URL = "/assessment/start";
+/** Where the assessment app actually runs; the proxy in next.config.mjs points here. */
+export const ASSESS_ORIGIN = "https://assess.civicsafetyadvisors.com";
 export const OG_IMAGE = "/og.jpg";
 
 export const FOUNDER = {

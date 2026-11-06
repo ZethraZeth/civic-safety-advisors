@@ -5,7 +5,7 @@
 Phone: (203) 676-8193. Email: info@civicsafetyadvisors.com.
 
 ## Key pages
-- [Free Security Self-Assessment](https://www.civicsafetyadvisors.com/assessment): 20-minute self-assessment that scores eight security areas and returns a prioritized action list and PDF. Tool at https://assess.civicsafetyadvisors.com.
+- [Free Security Self-Assessment](https://www.civicsafetyadvisors.com/assessment): 20-minute self-assessment that scores eight security areas and returns a prioritized action list and PDF. Start at https://www.civicsafetyadvisors.com/assessment/start.
 - [Connecticut Nonprofit Security Grant Program guide](https://www.civicsafetyadvisors.com/connecticut-nonprofit-security-grant): federal NSGP and state CT-NSGP eligibility, deadlines, the required vulnerability assessment, and allowable costs.
 - [Services](https://www.civicsafetyadvisors.com/services): threat and vulnerability assessments, workplace violence and employee safety assessments, policy review, emergency response plans, safety team and staff training.
 - [Industries](https://www.civicsafetyadvisors.com/industries): houses of worship, schools, property management and housing providers, nonprofits and public organizations.
