@@ -11,18 +11,18 @@ const items = [
     href: "/industries#houses-of-worship",
   },
   {
-    title: "Property Management & Housing Providers",
-    text:
-      "Staff who work alone, resident and applicant interactions, and multi-site portfolios. We assess employee safety and property security together.",
-    image: "/assets/images/industries/property.jpg",
-    href: "/industries#property-management-housing",
-  },
-  {
     title: "Schools & Educational Institutions",
     text:
       "From K-12 to higher education, we help create safe learning environments for students and staff.",
     image: "/assets/images/industries/school.jpg",
     href: "/industries#schools",
+  },
+  {
+    title: "Property Management & Housing Providers",
+    text:
+      "Staff who work alone, resident and applicant interactions, and multi-site portfolios. We assess employee safety and property security together.",
+    image: "/assets/images/industries/property.jpg",
+    href: "/industries#property-management-housing",
   },
   {
     title: "Nonprofits & Public Organizations",

@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Industries We Serve in CT, NY, MA, RI | Civic Safety Advisors",
   description:
-    "Specialized public safety consulting for Connecticut, New York, Massachusetts, and Rhode Island. Serving property management companies, housing providers, houses of worship, schools, nonprofits, and municipalities with practical security assessments and planning.",
+    "Specialized public safety consulting for Connecticut, New York, Massachusetts, and Rhode Island. Serving houses of worship, schools, property management companies, housing providers, nonprofits, and municipalities with practical security assessments and planning.",
 };
 
 export default function IndustriesPage() {

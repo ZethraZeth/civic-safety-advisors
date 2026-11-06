@@ -34,8 +34,13 @@ export default function HomePage() {
               <p className="text-sm font-semibold tracking-wide text-brass-500 uppercase font-serif">
                 Civic Safety Advisors
               </p>
-              <h1 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-                Practical Security Planning & Preparedness for Property Managers, Houses of Worship, Schools, and Public Organizations
+              <h1 className="mt-3 text-white">
+                <span className="block text-4xl font-bold tracking-tight sm:text-5xl lg:text-[3.4rem] lg:leading-[1.08]">
+                  Practical Security Planning &amp; Preparedness
+                </span>
+                <span className="mt-4 block text-lg font-normal leading-snug text-white/80 sm:text-xl">
+                  for <span className="font-semibold text-brass-500">houses of worship</span>, <span className="font-semibold text-brass-500">schools</span>, <span className="font-semibold text-brass-500">property managers</span>, and <span className="font-semibold text-brass-500">public organizations</span>
+                </span>
               </h1>
               <p className="mt-5 text-base leading-7 text-white/80 sm:text-lg">
                 We help mission-driven organizations identify real risks, clarify response responsibilities, and make defensible security decisions—before spending money on guards, cameras, or training.

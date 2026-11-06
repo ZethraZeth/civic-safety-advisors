@@ -9,27 +9,6 @@ export interface Industry {
 
 export const industries: Industry[] = [
   {
-    slug: "property-management-housing",
-    title: "Property Management & Housing Providers",
-    description:
-      "Property management companies, affordable housing organizations, and nonprofit landlords run a workforce that is spread across sites, often alone, and in constant contact with residents and applicants. Lease enforcement, rent collection, unit inspections, and after-hours maintenance calls can turn confrontational. Unit turnovers bring biohazard exposure. Older buildings make access control hard to maintain. We assess workplace violence risk, lone-worker exposure, office and property security, and incident reporting and emergency response procedures across a portfolio, and deliver recommendations ranked by cost so you can act on the highest-impact items first.",
-    challenges: [
-      "Staff working alone at small or remote sites",
-      "Confrontational resident and applicant interactions during lease enforcement and intake",
-      "Maintenance staff entering occupied units and handling turnovers after a death, overdose, or hoarding",
-      "Unauthorized access, propped doors, and shared key codes in older buildings",
-      "Inconsistent incident reporting across properties and regional managers",
-      "Newly acquired properties with unknown security conditions",
-    ],
-    keyServices: [
-      "workplace-violence-employee-safety",
-      "threat-vulnerability-assessment",
-      "policy-procedure-review",
-      "staff-training",
-    ],
-    image: "/assets/images/industries/property.jpg",
-  },
-  {
     slug: "houses-of-worship",
     title: "Houses of Worship",
     description:
@@ -68,6 +47,27 @@ export const industries: Industry[] = [
       "active-shooter-training",
     ],
     image: "/assets/images/industries/school.jpg",
+  },
+  {
+    slug: "property-management-housing",
+    title: "Property Management & Housing Providers",
+    description:
+      "Property management companies, affordable housing organizations, and nonprofit landlords run a workforce that is spread across sites, often alone, and in constant contact with residents and applicants. Lease enforcement, rent collection, unit inspections, and after-hours maintenance calls can turn confrontational. Unit turnovers bring biohazard exposure. Older buildings make access control hard to maintain. We assess workplace violence risk, lone-worker exposure, office and property security, and incident reporting and emergency response procedures across a portfolio, and deliver recommendations ranked by cost so you can act on the highest-impact items first.",
+    challenges: [
+      "Staff working alone at small or remote sites",
+      "Confrontational resident and applicant interactions during lease enforcement and intake",
+      "Maintenance staff entering occupied units and handling turnovers after a death, overdose, or hoarding",
+      "Unauthorized access, propped doors, and shared key codes in older buildings",
+      "Inconsistent incident reporting across properties and regional managers",
+      "Newly acquired properties with unknown security conditions",
+    ],
+    keyServices: [
+      "workplace-violence-employee-safety",
+      "threat-vulnerability-assessment",
+      "policy-procedure-review",
+      "staff-training",
+    ],
+    image: "/assets/images/industries/property.jpg",
   },
   {
     slug: "nonprofits-public-organizations",

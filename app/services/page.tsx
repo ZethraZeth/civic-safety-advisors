@@ -12,7 +12,7 @@ import * as Icons from "lucide-react";
 export const metadata = {
   title: "Public Safety Consulting Services in CT, NY, MA, RI | Civic Safety Advisors",
   description:
-    "Comprehensive public safety consulting services for Connecticut, New York, Massachusetts, and Rhode Island organizations. Security strategy, policy review, emergency planning, workplace violence assessment, and training for property managers, nonprofits, schools, and municipalities.",
+    "Comprehensive public safety consulting services for Connecticut, New York, Massachusetts, and Rhode Island organizations. Security strategy, policy review, emergency planning, workplace violence assessment, and training for houses of worship, schools, property managers, nonprofits, and municipalities.",
 };
 
 export default function ServicesPage() {
