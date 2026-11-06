@@ -15,15 +15,15 @@ export const metadata = {
 const facts = [
   { Icon: Clock, text: "20 minutes, about 25 questions" },
   { Icon: UserRound, text: "No account, no cost, no sales call" },
-  { Icon: ShieldCheck, text: "Your answers are encrypted and deleted after 12 months" },
-  { Icon: FileText, text: "Summary emailed to you; full PDF report with a free 30-minute consultation" },
+  { Icon: ShieldCheck, text: "Results on screen right away, plus a summary email" },
+  { Icon: FileText, text: "Full PDF report after a free 30-minute consultation" },
 ];
 
 const steps = [
   ["Pick your organization type", "House of worship, housing provider, school, nonprofit, or clinic. Questions and examples adjust to your setting."],
   ["Answer the questions", "One screen at a time. Each has a help note and an example. Answers save as you go, so you can stop and come back."],
   ["Enter where the report should go", "Organization name and contact details, encrypted before they are stored."],
-  ["Get your results", "Scores by area, your ten highest-impact fixes, and a summary email. The full report, with every recommendation, comes with a free 30-minute consultation."],
+  ["Get your results", "Scores by area, your ten highest-priority fixes, and a summary email. The full PDF report, with every recommendation, is sent after a free 30-minute consultation."],
 ];
 
 const areas = [
@@ -34,6 +34,7 @@ const areas = [
 const faqs = [
   ["Who should fill it out?", "One person who knows the building and the staff: an executive director, property manager, head of school, administrator, or safety committee lead. Walk the building first if you can."],
   ["What happens to my answers?", "Organization name, contact details, and answers are encrypted before they are stored. Our records show only a reference code, organization type, county, and summary scores. Everything is deleted after 12 months unless you ask us to keep it. We do not sell or share it."],
+  ["Why is the full report tied to a consultation?", "The PDF is 10 to 15 pages of recommendations written for your building. Thirty minutes with Seth is how those recommendations get explained, questioned, and put in the right order for your situation. There is no charge and nothing to buy; if you decide you want a site visit afterward, that is a separate conversation."],
   ["Can I use this for a security grant?", "The PDF is written to support federal and Connecticut Nonprofit Security Grant Program applications. It does not replace the site-specific vulnerability assessment the federal program requires, but it is a strong starting point, and we can do the full assessment if you need one. Our Connecticut Nonprofit Security Grant guide at /connecticut-nonprofit-security-grant covers deadlines and eligibility."],
   ["How is this different from the CISA tool?", "The questions are adapted from CISA's public-domain Houses of Worship Security Self-Assessment. We added questions on lone workers, aggressive interactions, keys and doors, lighting, and incident reporting; made the scales consistent; added examples for five organization types; and built the scoring, prioritization, and PDF."],
 ];
@@ -64,6 +65,12 @@ export default function AssessmentPage() {
                 <Button href={ASSESS_URL} variant="brass" className="justify-center whitespace-nowrap px-7">Start the assessment</Button>
                 <span className="text-sm text-slate-500">For houses of worship, housing providers, schools, nonprofits, and clinics.</span>
               </div>
+              <p className="mt-5 rounded-md border border-brass-500/40 bg-brass-500/10 px-4 py-3 text-sm text-ink-900">
+                <span className="font-semibold">How the report works:</span> you see your scores and your ten highest-priority fixes on screen as soon as you finish. The full PDF report, with every recommendation and a written explanation, is sent after a free 30-minute consultation with Seth.
+              </p>
+              <p className="mt-4 text-xs leading-5 text-slate-500">
+                No account needed. Your organization name, contact details, and answers are encrypted before they are stored and deleted after 12 months unless you ask us to keep them. We do not sell or share this data.
+              </p>
             </div>
 
             <div>

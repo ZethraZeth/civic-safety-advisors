@@ -61,13 +61,13 @@ export function SampleResults() {
         <ul className="mt-2 space-y-2">
           {actions.map(([t, cost, impact]) => (
             <li key={t} className="flex items-start gap-2 text-xs text-slate-700">
-              <span className="mt-0.5 h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: impact === "High" ? "#dc2626" : "#d97706" }} aria-label={`${impact} impact`} />
+              <span className="mt-0.5 h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: impact === "High" ? "#dc2626" : "#d97706" }} aria-label={impact === "High" ? "Do first" : "Do next"} />
               <span className="flex-1 leading-5">{t}</span>
               <span className="shrink-0 font-mono text-[11px] font-semibold text-slate-500">{cost}</span>
             </li>
           ))}
         </ul>
-        <p className="mt-2 text-[11px] text-slate-400">Dot = impact. $ = staff time only, $$ = under $1,000, up to $$$$.</p>
+        <p className="mt-2 text-[11px] text-slate-400">Dot = priority (red do first, orange do next). $ = staff time only, $$ = under $1,000, up to $$$$.</p>
       </div>
     </div>
   );
