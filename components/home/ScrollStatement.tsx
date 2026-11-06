@@ -1,0 +1,65 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+
+const STATEMENT =
+  "A fresh perspective on security. We do not sell guards, cameras, or alarm contracts. We help you work out what your organization actually needs, in what order, and what it should cost, so every dollar you spend is one you can defend.";
+
+/**
+ * Statement whose words change from muted to full color as the reader scrolls.
+ * The section is taller than the viewport; the text is sticky, and scroll
+ * progress through the section drives how many words are lit.
+ */
+export function ScrollStatement() {
+  const ref = useRef<HTMLElement>(null);
+  const [progress, setProgress] = useState(0);
+  const [reduced, setReduced] = useState(false);
+  const words = STATEMENT.split(" ");
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReduced(mq.matches);
+    if (mq.matches) return;
+
+    let raf = 0;
+    const update = () => {
+      raf = 0;
+      const el = ref.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight;
+      // 0 when the section top reaches the middle of the viewport, 1 when its bottom does.
+      const total = rect.height - vh * 0.5;
+      const passed = vh * 0.6 - rect.top;
+      setProgress(Math.min(1, Math.max(0, passed / total)));
+    };
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(update); };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => { window.removeEventListener("scroll", onScroll); window.removeEventListener("resize", onScroll); if (raf) cancelAnimationFrame(raf); };
+  }, []);
+
+  const lit = reduced ? words.length : Math.round(progress * words.length);
+
+  return (
+    <section ref={ref} className="relative bg-white" style={{ height: "170vh" }} aria-label="Our perspective">
+      <div className="sticky top-0 flex min-h-screen items-center">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brass-600 font-serif">Our approach</p>
+          <p className="mt-5 text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl lg:leading-[1.15]">
+            {words.map((w, i) => (
+              <span
+                key={i}
+                className="transition-colors duration-300"
+                style={{ color: i < lit ? "#0b1b33" : "rgba(11, 27, 51, 0.18)" }}
+              >
+                {w}{" "}
+              </span>
+            ))}
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -10,12 +10,11 @@ import { locationSummaries } from "@/lib/locations";
 import { ChevronDown } from "lucide-react";
 
 const nav = [
-  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services", hasDropdown: true },
   { href: "/locations", label: "Service Areas", hasDropdown: true },
   { href: "/industries", label: "Industries", hasDropdown: true },
-  { href: "/assessment", label: "Self-Assessment" },
+  { href: "/assessment", label: "Assessment" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
@@ -53,7 +52,7 @@ export function Header() {
             </div>
           </Link>
 
-          <nav className="desktop-nav items-center gap-8">
+          <nav className="desktop-nav items-center gap-5 2xl:gap-7">
             {nav.map((item) => (
               <div
                 key={item.href}
@@ -63,7 +62,7 @@ export function Header() {
               >
                 <Link
                   href={item.href}
-                  className="text-sm font-semibold text-ink-900 hover:text-brass-600 transition-colors inline-flex items-center gap-1"
+                  className="whitespace-nowrap text-sm font-semibold text-ink-900 hover:text-brass-600 transition-colors inline-flex items-center gap-1"
                 >
                   {item.label}
                   {item.hasDropdown && (
@@ -142,11 +141,11 @@ export function Header() {
           </nav>
 
           <div className="desktop-button">
-            <Button href="/contact" variant="brass">Schedule a Consultation</Button>
+            <Button href="/contact" variant="brass" className="whitespace-nowrap px-4">Schedule a Consultation</Button>
           </div>
 
           <button
-            className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100"
+            className="lg:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100"
             aria-label="Open menu"
             onClick={() => setOpen((v) => !v)}
           >
@@ -160,7 +159,7 @@ export function Header() {
         </div>
 
         {open ? (
-          <div className="md:hidden pb-4">
+          <div className="lg:hidden pb-4">
             <div className="flex items-center justify-center gap-3 pt-4 pb-3 border-b border-slate-200">
               <div className="relative h-12 w-12 flex-shrink-0">
                 <Image
@@ -175,6 +174,7 @@ export function Header() {
               </div>
             </div>
             <div className="flex flex-col gap-2 pt-2">
+              <Link href="/" className="rounded-md px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100 block" onClick={() => setOpen(false)}>Home</Link>
               {nav.map((item) => (
                 <div key={item.href}>
                   <Link

@@ -4,18 +4,18 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const items = [
   {
-    title: "Property Management & Housing Providers",
-    text:
-      "Staff who work alone, resident and applicant interactions, and multi-site portfolios. We assess employee safety and property security together.",
-    image: "/assets/images/industries/property.jpg",
-    href: "/industries#property-management-housing",
-  },
-  {
     title: "Houses of Worship",
     text:
       "Churches, synagogues, mosques, and temples deserve to be sanctuaries of peace. We help ensure they stay that way.",
     image: "/assets/images/industries/worship.jpg",
     href: "/industries#houses-of-worship",
+  },
+  {
+    title: "Property Management & Housing Providers",
+    text:
+      "Staff who work alone, resident and applicant interactions, and multi-site portfolios. We assess employee safety and property security together.",
+    image: "/assets/images/industries/property.jpg",
+    href: "/industries#property-management-housing",
   },
   {
     title: "Schools & Educational Institutions",

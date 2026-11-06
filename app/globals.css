@@ -36,11 +36,13 @@ a {
   display: none !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .desktop-nav {
     display: flex !important;
   }
+}
 
+@media (min-width: 1280px) {
   .desktop-button {
     display: block !important;
   }

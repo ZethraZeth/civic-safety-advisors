@@ -9,6 +9,8 @@ import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { FAQ } from "@/components/home/FAQ";
 import { RecentInsights } from "@/components/home/RecentInsights";
 import { CTABanner } from "@/components/home/CTABanner";
+import { AssessmentPromo } from "@/components/home/AssessmentPromo";
+import { ScrollStatement } from "@/components/home/ScrollStatement";
 
 export default function HomePage() {
   return (
@@ -26,43 +28,41 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-ink-900/65" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold tracking-wide text-brass-500 uppercase font-serif">
-              Civic Safety Advisors
-            </p>
-            <h1 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-              Practical Security Planning & Preparedness for Property Managers, Houses of Worship, Schools, and Public Organizations
-            </h1>
-            <p className="mt-5 text-base leading-7 text-white/80 sm:text-lg">
-              We help mission-driven organizations identify real risks, clarify response responsibilities, and make defensible security decisions—before spending money on guards, cameras, or training.
-            </p>
-            <p className="mt-4 text-sm font-bold text-brass-500">
-              Serving Connecticut, New York, Massachusetts, and Rhode Island
-            </p>
-
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Button
-                href="/assessment"
-                variant="brass"
-                className="justify-center"
-              >
-                Take the Free Security Self-Assessment
-              </Button>
-              <Button
-                href="/contact"
-                variant="secondary"
-                className="justify-center bg-white/12 border-white/60 text-white hover:bg-white/22 hover:border-white focus:ring-white/50"
-              >
-                Schedule a Consultation
-              </Button>
+        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
+          <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16">
+            <div className="max-w-2xl">
+              <p className="text-sm font-semibold tracking-wide text-brass-500 uppercase font-serif">
+                Civic Safety Advisors
+              </p>
+              <h1 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                Practical Security Planning & Preparedness for Property Managers, Houses of Worship, Schools, and Public Organizations
+              </h1>
+              <p className="mt-5 text-base leading-7 text-white/80 sm:text-lg">
+                We help mission-driven organizations identify real risks, clarify response responsibilities, and make defensible security decisions—before spending money on guards, cameras, or training.
+              </p>
+              <p className="mt-4 text-sm font-bold text-brass-500">
+                Serving Connecticut, New York, Massachusetts, and Rhode Island
+              </p>
+              <div className="mt-8">
+                <Button
+                  href="/contact"
+                  variant="secondary"
+                  className="justify-center bg-white/12 border-white/60 text-white hover:bg-white/22 hover:border-white focus:ring-white/50"
+                >
+                  Schedule a Consultation
+                </Button>
+              </div>
             </div>
-            <p className="mt-3 text-sm text-white/60">20 minutes, no account. Get a score by area, a prioritized action list, and a PDF for your board or insurer.</p>
+
+            <div className="flex justify-center lg:justify-end">
+              <AssessmentPromo />
+            </div>
           </div>
         </div>
       </section>
 
       <TrustIndicators />
+      <ScrollStatement />
       <WhoWeServe />
       <ServicesOverview />
       <ServiceAreas />
