@@ -67,7 +67,7 @@ export function SampleResults() {
             </li>
           ))}
         </ul>
-        <p className="mt-2 text-[11px] text-slate-400">Dot = priority (red do first, orange do next). $ = staff time only, $$ = under $1,000, up to $$$$.</p>
+        <p className="mt-2 text-[11px] text-slate-400">Dot = priority (red do first, orange do next). $ = staff time only, $$ = under $500, $$$ = $500 to $5,000, $$$$ = over $5,000.</p>
       </div>
     </div>
   );
