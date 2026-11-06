@@ -38,8 +38,11 @@ export default function HomePage() {
                 <span className="block text-4xl font-bold tracking-tight sm:text-5xl lg:text-[3.4rem] lg:leading-[1.08]">
                   Practical Security Planning &amp; Preparedness
                 </span>
-                <span className="mt-4 block text-lg font-normal leading-snug text-white/80 sm:text-xl">
-                  for <span className="font-semibold text-brass-500">houses of worship</span>, <span className="font-semibold text-brass-500">schools</span>, <span className="font-semibold text-brass-500">property managers</span>, and <span className="font-semibold text-brass-500">public organizations</span>
+                <span className="mt-5 block text-2xl font-normal leading-snug text-white/85 sm:text-3xl">
+                  for <span className="font-semibold text-brass-500">houses of worship</span>,<br />
+                  <span className="font-semibold text-brass-500">schools</span>,<br />
+                  <span className="font-semibold text-brass-500">property managers</span>,<br />
+                  and <span className="font-semibold text-brass-500">public organizations</span>
                 </span>
               </h1>
               <p className="mt-5 text-base leading-7 text-white/80 sm:text-lg">
