@@ -47,3 +47,16 @@ a {
     display: block !important;
   }
 }
+
+/* No focus ring on mouse click; a visible ring for keyboard focus only. */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #c6a46a;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
