@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import { JsonLd, organizationLd, personLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_NAME, DESCRIPTION, OG_IMAGE } from "@/lib/site";
 

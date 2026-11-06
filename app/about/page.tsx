@@ -22,6 +22,7 @@ export default function AboutPage() {
             <p className="mt-5 text-lg leading-8 text-slate-700">
               Civic Safety Advisors is a security consulting firm in Branford, Connecticut, founded by Seth Hershman, a former Yale University Police detective and Connecticut DESPP policy advisor. We assess risk, write emergency plans, and train staff for houses of worship, schools, property managers, and public organizations, and we do not sell guards, cameras, or alarm systems.
             </p>
+            <p className="mt-4 text-sm"><a href="https://www.linkedin.com/in/seth-hershman-08606045/" rel="me noopener" target="_blank" className="font-semibold text-ink-900 underline">Seth Hershman on LinkedIn</a></p>
           </div>
         </div>
       </section>

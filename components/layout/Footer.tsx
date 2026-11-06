@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FOUNDER } from "@/lib/site";
 import Image from "next/image";
 
 const links = [
@@ -60,6 +61,10 @@ export function Footer() {
               <li>
                 <span className="font-semibold text-white">Phone:</span>{" "}
                 (203) 676-8193
+              </li>
+              <li>
+                <span className="font-semibold text-white">LinkedIn:</span>{" "}
+                <a href={FOUNDER.linkedin} rel="me noopener" target="_blank" className="hover:text-white">Seth Hershman</a>
               </li>
               <li>
                 <span className="font-semibold text-white">Location:</span>{" "}

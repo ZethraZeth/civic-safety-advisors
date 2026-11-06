@@ -17,7 +17,7 @@ export const FOUNDER = {
   credentials: "Former Yale University Police detective and Connecticut DESPP policy advisor; M.S. in Investigations, University of New Haven",
   shortCredentials: "Former Yale Police detective, former CT DESPP policy advisor",
   image: "/assets/images/team/seth-hershman.jpg",
-  linkedin: "", // add when the profile URL is confirmed
+  linkedin: "https://www.linkedin.com/in/seth-hershman-08606045/",
 };
 
 export const DESCRIPTION =
