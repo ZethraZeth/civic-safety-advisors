@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { categoryLabels, type ServiceCategory } from "@/lib/services";
@@ -29,6 +29,16 @@ const serviceCategories: Array<{ key: ServiceCategory; label: string }> = [
 export function Header() {
   const [open, setOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
+  // Mobile menu: lock the page behind it so only the menu scrolls; close on resize to desktop.
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onResize = () => { if (window.innerWidth >= 1024) setOpen(false); };
+    window.addEventListener("resize", onResize);
+    return () => { document.body.style.overflow = prev; window.removeEventListener("resize", onResize); };
+  }, [open]);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
@@ -159,7 +169,7 @@ export function Header() {
         </div>
 
         {open ? (
-          <div className="lg:hidden pb-4">
+          <div className="lg:hidden -mx-4 bg-white px-4 pb-4 max-h-[calc(100dvh-7rem)] overflow-y-auto overscroll-contain border-t border-slate-200">
             <div className="flex items-center justify-center gap-3 pt-4 pb-3 border-b border-slate-200">
               <div className="relative h-12 w-12 flex-shrink-0">
                 <Image
