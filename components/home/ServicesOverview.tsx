@@ -19,7 +19,7 @@ export function ServicesOverview() {
         />
 
         <p className="mt-6 max-w-3xl text-sm leading-6 text-slate-600">
-          Policy and compliance come first. Physical security and training are built on top of them. We do not sell equipment, so every recommendation is what makes sense for you, not what can be sold to you.
+          Policy and compliance come first, and physical security and training are built on top of them. We do not sell equipment, so every recommendation is what makes sense for you, not what can be sold to you.
         </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

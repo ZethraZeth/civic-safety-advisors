@@ -13,7 +13,7 @@ const items = [
   {
     title: "Schools & Educational Institutions",
     text:
-      "K-12 through higher education: controlled entry, drills that do not frighten students, and staff who know the plan.",
+      "From K-12 through higher education, we help with controlled entry, drills that do not frighten students, and staff who know the plan.",
     image: "/assets/images/industries/school.jpg",
     href: "/industries#schools",
   },
@@ -27,7 +27,7 @@ const items = [
   {
     title: "Nonprofits & Public Organizations",
     text:
-      "Community centers, libraries, and social service agencies: open buildings, small staffs, and tight budgets.",
+      "Community centers, libraries, and social service agencies run open buildings with small staffs and tight budgets.",
     image: "/assets/images/industries/nonprofit.jpg",
     href: "/industries#nonprofits",
   },

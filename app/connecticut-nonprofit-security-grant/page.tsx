@@ -155,7 +155,7 @@ export default function NsgpGuidePage() {
               <li>The date, the assessor's name and qualifications, and the method used.</li>
             </ul>
             <p className="mt-4 leading-7 text-slate-700">
-              Two ways to get there. Our <Link href="/assessment" className="font-semibold text-ink-900 underline">free 20-minute self-assessment</Link> produces a scored report with a prioritized action list; it is a good starting inventory and mirrors the structure of the CISA self-assessment that Connecticut accepts. For a site-specific written assessment from a security contractor, our <Link href="/services/threat-vulnerability-assessment" className="font-semibold text-ink-900 underline">threat and vulnerability assessment</Link> is written to the NSGP format so the findings map directly onto the Investment Justification.
+              There are two ways to get there. Our <Link href="/assessment" className="font-semibold text-ink-900 underline">free 20-minute self-assessment</Link> produces a scored report with a prioritized action list; it is a good starting inventory and mirrors the structure of the CISA self-assessment that Connecticut accepts. For a site-specific written assessment from a security contractor, our <Link href="/services/threat-vulnerability-assessment" className="font-semibold text-ink-900 underline">threat and vulnerability assessment</Link> is written to the NSGP format so the findings map directly onto the Investment Justification.
             </p>
           </section>
 

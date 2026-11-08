@@ -242,7 +242,7 @@ const whyChooseUs = [
   {
     title: "One Kind of Client",
     description:
-      "We work only with houses of worship, schools, housing providers, and public organizations. No corporate clients.",
+      "We work only with houses of worship, schools, housing providers, and public organizations, and we do not take corporate clients.",
   },
   {
     title: "Practical Experience",

@@ -3,22 +3,22 @@ import { ShieldCheck, Puzzle, Users, FileBadge } from "lucide-react";
 const items = [
   {
     title: "Assessments",
-    desc: "Facility and policy reviews that prioritize actions after coordinating with public safety partners.",
+    desc: "We review the facility and the policies, then rank the actions after coordinating with public safety partners.",
     Icon: ShieldCheck,
   },
   {
     title: "Recommendations, Not Products",
-    desc: "Recommendations sized to your mission, your budget, and what public resources already provide.",
+    desc: "Recommendations are sized to your mission, your budget, and what public resources already provide.",
     Icon: Puzzle,
   },
   {
     title: "Training",
-    desc: "Training tied to your plan and your building, not one-off drills.",
+    desc: "Training is tied to your plan and your building rather than run as one-off drills.",
     Icon: Users,
   },
   {
     title: "Compliance",
-    desc: "Documentation you can hand to a board, an insurer, or a grant reviewer.",
+    desc: "You get documentation you can hand to a board, an insurer, or a grant reviewer.",
     Icon: FileBadge,
   },
 ];

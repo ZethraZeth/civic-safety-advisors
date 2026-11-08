@@ -14,7 +14,7 @@ const items = [
     href: "/assessment",
     Icon: ClipboardCheck,
     title: "Free Security Self-Assessment",
-    text: "About 25 questions, 20 minutes, no account. You get a score for eight security areas, your ten highest-priority fixes with cost ranges, and a summary by email. The full report comes with a free 30-minute consultation.",
+    text: "About 25 questions that take around 20 minutes, with no account required. You get a score for eight security areas, your ten highest-priority fixes with cost ranges, and a summary by email. The full report comes with a free 30-minute consultation.",
     cta: "Start the assessment",
   },
   {

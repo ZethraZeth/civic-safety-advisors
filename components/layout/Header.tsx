@@ -20,7 +20,7 @@ const nav = [
 ];
 
 const resources = [
-  { href: "/assessment", label: "Free Security Self-Assessment", note: "20 minutes. Scores by area and a prioritized action list." },
+  { href: "/assessment", label: "Free Security Self-Assessment", note: "About 20 minutes, and you get scores by area and a prioritized action list." },
   { href: "/connecticut-nonprofit-security-grant", label: "CT Nonprofit Security Grant Guide", note: "Federal NSGP and CT-NSGP: eligibility, deadlines, the required assessment." },
 ];
 

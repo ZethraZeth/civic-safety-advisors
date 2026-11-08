@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 const STICKY_TOP = 176; // px below the fixed header where the block pins
 
 const STATEMENT =
-  "A fresh perspective on security. We do not sell guards, cameras, or alarm contracts. We help you work out what your organization actually needs, in what order, and what it should cost, so every dollar you spend is one you can defend.";
+  "We do not sell guards, cameras, or alarm contracts, so our advice is not a sales pitch. We help you work out what your organization actually needs, in what order, and what it should cost, so every dollar you spend is one you can defend.";
 
 /**
  * Statement whose words change from muted to full color as the reader scrolls.

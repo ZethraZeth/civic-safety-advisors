@@ -21,7 +21,7 @@ const facts = [
 
 const steps = [
   ["Pick your organization type", "House of worship, housing provider, school, nonprofit, or clinic. Questions and examples adjust to your setting."],
-  ["Answer the questions", "One screen at a time. Each has a help note and an example. Answers save as you go, so you can stop and come back."],
+  ["Answer the questions", "The questions come one screen at a time, each with a help note and an example. Answers save as you go, so you can stop and come back."],
   ["Enter where the report should go", "Organization name and contact details, encrypted before they are stored."],
   ["Get your results", "Scores by area, your ten highest-priority fixes, and a summary email. The full PDF report, with every recommendation, is sent after a free 30-minute consultation."],
 ];
@@ -69,13 +69,13 @@ export default function AssessmentPage() {
                 <span className="font-semibold">How the report works:</span> you see your scores and your ten highest-priority fixes on screen as soon as you finish. The full PDF report, with every recommendation and a written explanation, is sent after a free 30-minute consultation with Seth.
               </p>
               <p className="mt-4 text-xs leading-5 text-slate-500">
-                No account needed. Your organization name, contact details, and answers are encrypted before they are stored and deleted after 12 months unless you ask us to keep them. We do not sell or share this data.
+                You do not need an account. Your organization name, contact details, and answers are encrypted before they are stored and deleted after 12 months unless you ask us to keep them. We do not sell or share this data.
               </p>
             </div>
 
             <div>
               <SampleResults />
-              <p className="mt-3 text-center text-xs text-slate-500">Sample results. Yours are built from your answers.</p>
+              <p className="mt-3 text-center text-xs text-slate-500">These are sample results; yours are built from your answers.</p>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default function AssessmentPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
             <div className="max-w-2xl">
-              <h2 className="text-2xl font-bold tracking-tight text-white">Twenty minutes. One person. A plan.</h2>
+              <h2 className="text-2xl font-bold tracking-tight text-white">Twenty minutes with one person who knows the building gets you a plan.</h2>
               <p className="mt-2 text-sm text-white/75">A self-assessment records what you believe about your building. If you want someone to walk it and verify, that is what we do.</p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">

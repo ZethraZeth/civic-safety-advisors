@@ -262,8 +262,8 @@ export const recentPosts: BlogPost[] = [
 
       <h2>Common Coordination Mistakes to Avoid</h2>
       <ul>
-        <li><strong>Assuming first responders know your facility:</strong> They don't. You must provide information proactively.</li>
-        <li><strong>Creating plans without first responder input:</strong> They respond to buildings like yours for a living. Ask them.</li>
+        <li><strong>Assuming first responders know your facility:</strong> They do not, so you have to provide the information before they need it.</li>
+        <li><strong>Creating plans without first responder input:</strong> They respond to buildings like yours for a living, so ask for their input before you finalize anything.</li>
         <li><strong>Failing to update contact information:</strong> Outdated contacts waste critical seconds in emergencies.</li>
         <li><strong>Not practicing coordination:</strong> Meeting responders for the first time during a crisis is too late.</li>
         <li><strong>Overlooking volunteer security teams:</strong> If you have security volunteers, first responders need to know who they are and how they'll interact.</li>
@@ -305,12 +305,12 @@ export const recentPosts: BlogPost[] = [
     content: `
       <p>Something happens at one of your buildings. A resident's guest threatens the site manager in the parking lot. A stranger is found sleeping in a stairwell. A maintenance tech opens a unit for a work order and walks into a situation nobody warned him about. The next week, somebody on the ownership side asks the question property managers hear more than any other: "Can we get cameras in there?"</p>
 
-      <p>Sometimes the answer is yes. Usually it is "not yet." At a 20-, 30-, or 50-unit building, the things that most reduce risk to your staff and residents cost far less than a camera system and get done in a week instead of a quarter. This post walks through what to fix first, then what cameras are actually good for, so that if you do spend the money you spend it once.</p>
+      <p>Sometimes the answer is yes, but usually it is "not yet." At a 20-, 30-, or 50-unit building, the things that most reduce risk to your staff and residents cost far less than a camera system and get done in a week instead of a quarter. This post walks through what to fix first, then what cameras are actually good for, so that if you do spend the money you spend it once.</p>
 
       <h2>What a camera does and does not do</h2>
-      <p>A camera records. That is the whole job. It does not stop a confrontation in progress, it does not make a propped door close, and unless someone is watching the feed and can dispatch a response, it does not shorten the time between an incident starting and help arriving. At most small and mid-size residential properties nobody is watching the feed. The footage gets pulled afterward, if the system was working, if the angle was right, and if anyone knew how to export it.</p>
+      <p>A camera records, and that is the whole job. It does not stop a confrontation in progress, it does not make a propped door close, and unless someone is watching the feed and can dispatch a response, it does not shorten the time between an incident starting and help arriving. At most small and mid-size residential properties nobody is watching the feed. The footage gets pulled afterward, if the system was working, if the angle was right, and if anyone knew how to export it.</p>
 
-      <p>That makes cameras an investigative tool and sometimes a deterrent. Both are real benefits. Neither is a substitute for the procedural controls below, which address the moment the incident is happening.</p>
+      <p>That makes cameras an investigative tool and sometimes a deterrent. Both are real benefits, but neither is a substitute for the procedural controls below, which address the moment the incident is happening.</p>
 
       <h2>Fix these first</h2>
 
@@ -321,19 +321,19 @@ export const recentPosts: BlogPost[] = [
       <p>Propped doors, broken closers, and latches that do not catch are how unauthorized people get into buildings. Residents prop doors for convenience, deliveries, or a guest who does not have a key. Fixing closers and latches is a maintenance ticket, not a capital project. If the same door keeps getting propped, the fix is usually a procedural one: a sign, a conversation at the next resident meeting, and a consequence in the lease that management actually applies.</p>
 
       <h3>3. Exterior lighting</h3>
-      <p>A dark parking lot or entry is where staff feel most exposed and where the incidents in your logs tend to cluster. Lighting is cheaper than cameras, works whether or not anyone is watching, and improves the footage if you add cameras later. Walk the property after dark with the site manager and note every spot where you would not want to be alone. Then fix those.</p>
+      <p>A dark parking lot or entry is where staff feel most exposed and where the incidents in your logs tend to cluster. Lighting is cheaper than cameras, works whether or not anyone is watching, and improves the footage if you add cameras later. Walk the property after dark with the site manager, note every spot where you would not want to be alone, and fix those spots first.</p>
 
       <h3>4. A rule for who goes into occupied units, and when</h3>
-      <p>Maintenance staff enter occupied units every day. Most companies have no written rule about it. Write one. It should cover notice to the resident, what to do if the resident is not home and someone else answers, what to do if there are signs of a weapon, drugs, a hoarding condition, or a person in distress, and when a tech should leave and call for backup rather than finish the ticket. This is a page, not a manual. It protects your people and it protects you.</p>
+      <p>Maintenance staff enter occupied units every day, and most companies have no written rule about it. The rule should cover notice to the resident, what to do if the resident is not home and someone else answers, what to do if there are signs of a weapon, drugs, a hoarding condition, or a person in distress, and when a tech should leave and call for backup rather than finish the ticket. This is a page, not a manual, and it protects your people as much as it protects you.</p>
 
       <h3>5. A lone-worker check-in</h3>
       <p>At small buildings there is often one site manager, and at smaller ones a manager who covers several buildings on a rotation. If that person is confronted in the office or the lot, who knows? A simple check-in rule, a text to a supervisor at set times or when starting a lease enforcement conversation, costs nothing and tells you within the hour if something is wrong. Phone apps that do this automatically exist and are inexpensive, but the rule matters more than the tool.</p>
 
       <h3>6. A single incident reporting process</h3>
-      <p>Ask your site managers how they report an incident. If the answers differ by building, you do not have a process. Pick one form, one definition of what counts as an incident, one threshold for calling the regional manager the same day, and one place the reports go. The point is not paperwork. It is that a pattern at one building becomes visible to the people who can do something about it. Most companies discover they had five incidents involving the same resident only after the sixth one makes the news.</p>
+      <p>Ask your site managers how they report an incident. If the answers differ by building, you do not have a process. Pick one form, one definition of what counts as an incident, one threshold for calling the regional manager the same day, and one place the reports go. The point is not the paperwork but that a pattern at one building becomes visible to the people who can do something about it. Most companies discover they had five incidents involving the same resident only after the sixth one makes the news.</p>
 
       <h3>7. Office layout</h3>
-      <p>Look at the leasing or management office from the point of view of a staff member alone with an angry visitor. Is there a second way out? Is the desk between the employee and the door, or between the employee and the wall? Can the office door be locked from inside quickly? Rearranging furniture is free. A second exit is sometimes a construction project, but knowing you do not have one changes how you staff the office and when you schedule difficult conversations.</p>
+      <p>Look at the leasing or management office from the point of view of a staff member alone with an angry visitor. Is there a second way out? Is the desk between the employee and the door, or between the employee and the wall? Can the office door be locked from inside quickly? Rearranging the furniture costs nothing, and while a second exit is sometimes a construction project, knowing you do not have one changes how you staff the office and when you schedule difficult conversations.</p>
 
       <h2>When cameras do earn their cost</h2>
       <p>After the items above are handled, cameras make sense in specific cases:</p>
@@ -350,10 +350,10 @@ export const recentPosts: BlogPost[] = [
       <p>A 32-unit building with one part-time site manager. After a parking lot confrontation, ownership asked for a quote on cameras: eight exterior cameras, a recorder, installation, and a maintenance contract. Before spending that, the fixes that addressed the actual incident were: new exterior lighting on the lot, a written rule that guest parking enforcement happens in daylight with a second person or not at all, a check-in text to the regional manager before any enforcement conversation, and one incident form used across every building the company manages. Total cost was a fraction of the camera quote. Cameras went on the lot entrance later, for identification, once the lighting made the footage usable.</p>
 
       <h2>For nonprofit and affordable housing owners</h2>
-      <p>Everything above applies with more force if you are a nonprofit housing provider or you manage affordable units. Budgets are tighter, buildings are often older, and your staff work with residents who may be in crisis more often than at a market-rate property. The procedural fixes are the ones you can afford, and they are the ones a funder, an insurance carrier, or a board will want to see documented. Cameras are a line item. A written lone-worker policy and a working incident reporting process are a program.</p>
+      <p>Everything above applies with more force if you are a nonprofit housing provider or you manage affordable units. Budgets are tighter, buildings are often older, and your staff work with residents who may be in crisis more often than at a market-rate property. The procedural fixes are the ones you can afford, and they are the ones a funder, an insurance carrier, or a board will want to see documented. Cameras are a line item, while a written lone-worker policy and a working incident reporting process are a program a funder can recognize.</p>
 
       <h2>Where to start</h2>
-      <p>Walk one building with the site manager and the list above. Write down what you find. If most of the seven items are already handled, you are in good shape and a camera conversation is reasonable. If they are not, you have your next month's work, and it will cost less than the camera quote on your desk.</p>
+      <p>Walk one building with the site manager and the list above, and write down what you find. If most of the seven items are already handled, you are in good shape and a camera conversation is reasonable. If they are not, you have your next month's work, and it will cost less than the camera quote on your desk.</p>
 
       <p>If you would rather have an outside set of eyes on it, <a href="/contact">contact us</a>. We assess employee safety and property security across a portfolio and tell you what to fix first, and what not to buy.</p>
     `,
@@ -369,7 +369,7 @@ export const recentPosts: BlogPost[] = [
     publishedAt: "2025-01-15",
     readTime: 6,
     content: `
-      <p>You want the doors open and the congregation safe. Where do you start?</p>
+      <p>You want the doors open and the congregation safe, and it is not obvious where to start.</p>
 
       <p>After dozens of assessments at churches, synagogues, mosques, and temples, these are the five areas where practical steps most consistently improve security.</p>
 
@@ -387,7 +387,7 @@ export const recentPosts: BlogPost[] = [
       <p>The goal is awareness, not barriers. Greeters do two jobs: hospitality and watching the room.</p>
 
       <h2>2. Children's Ministry Protection</h2>
-      <p>Children's areas need particular attention. Parents are trusting you with their kids.</p>
+      <p>Children's areas need particular attention, because parents are trusting you with their kids.</p>
 
       <p><strong>Essential steps:</strong></p>
       <ul>
@@ -399,7 +399,7 @@ export const recentPosts: BlogPost[] = [
       </ul>
 
       <h2>3. Emergency Response Planning</h2>
-      <p>Does your staff know what to do if a medical emergency occurs during services? What about a fire? An active threat?</p>
+      <p>Does your staff know what to do if a medical emergency occurs during services, if a fire breaks out, or if someone threatens the building?</p>
 
       <p><strong>Start here:</strong></p>
       <ul>
@@ -425,7 +425,7 @@ export const recentPosts: BlogPost[] = [
       <p>Many security vulnerabilities can be fixed with basic maintenance, better lighting, or simple procedural changes.</p>
 
       <h2>5. Safety Team Development</h2>
-      <p>You don't need armed guards. You need aware people who know what to do.</p>
+      <p>You do not need armed guards so much as aware people who know what to do.</p>
 
       <p><strong>Build a basic safety team:</strong></p>
       <ul>
@@ -472,7 +472,7 @@ export const recentPosts: BlogPost[] = [
         <li><strong>Background checks:</strong> Some states have specific requirements for types of background checks.</li>
       </ul>
 
-      <p>Never assume a candidate meets requirements. Verify everything.</p>
+      <p>Do not take a candidate's word that they meet the requirements. Check each one yourself.</p>
 
       <h2>Essential Qualifications</h2>
       <p>Look for these baseline qualifications:</p>
@@ -496,7 +496,7 @@ export const recentPosts: BlogPost[] = [
       </ul>
 
       <h2>Interview Questions That Matter</h2>
-      <p>Skip the generic questions. Focus on scenarios and judgment:</p>
+      <p>Skip the generic questions and focus on scenarios and judgment:</p>
 
       <h3>Situational Questions:</h3>
       <ul>
@@ -531,7 +531,7 @@ export const recentPosts: BlogPost[] = [
         <li><strong>Poor communication skills</strong></li>
       </ul>
 
-      <p>Trust your instincts. If something feels off during the interview, it won't improve after hiring.</p>
+      <p>Trust your instincts: if something feels off during the interview, it will not improve after hiring.</p>
 
       <h2>The Background Check Process</h2>
       <p>Never skip background checks, even for volunteers. At minimum, conduct:</p>
@@ -599,7 +599,7 @@ export const recentPosts: BlogPost[] = [
     publishedAt: "2025-01-05",
     readTime: 7,
     content: `
-      <p>You know you need an emergency response plan. Everyone says you need one. But when you sit down to create it, where do you actually start?</p>
+      <p>Everyone says you need an emergency response plan, but when you sit down to create one, where do you actually start?</p>
 
       <p>Here is how to build one, in order, without getting buried.</p>
 
@@ -623,7 +623,7 @@ export const recentPosts: BlogPost[] = [
         <li>Are there specific threats you've experienced or been warned about?</li>
       </ul>
 
-      <p>Pick 3-5 scenarios to start. You can always add more later.</p>
+      <p>Pick three to five scenarios to start, and add more later.</p>
 
       <h2>Step 2: Define Clear Response Procedures</h2>
       <p>For each scenario, document WHO does WHAT in simple, clear language.</p>
@@ -709,7 +709,7 @@ export const recentPosts: BlogPost[] = [
       </ul>
 
       <h2>Step 7: Train Your People</h2>
-      <p>A plan on paper doesn't save lives. Training does.</p>
+      <p>What saves lives in the moment is not the plan on paper but the people who have trained on it.</p>
 
       <h3>Essential Training:</h3>
       <ul>
@@ -728,7 +728,7 @@ export const recentPosts: BlogPost[] = [
         <li>Lockdown (if applicable)</li>
       </ul>
 
-      <p>Drills reveal gaps in your plan. That's the point.</p>
+      <p>Drills reveal the gaps in your plan, which is the point of running them.</p>
 
       <h2>Step 8: Document Everything Simply</h2>
       <p>Your plan should be:</p>
@@ -742,7 +742,7 @@ export const recentPosts: BlogPost[] = [
       <p>Laminated one-page cards for each scenario that anyone can follow. Post them in strategic locations.</p>
 
       <h2>Step 9: Review and Update Annually</h2>
-      <p>Your plan isn't static. Review it every year and after any incident:</p>
+      <p>Review the plan every year and after any incident:</p>
 
       <ul>
         <li>Have contact numbers changed?</li>
@@ -765,7 +765,7 @@ export const recentPosts: BlogPost[] = [
       <h2>Don't Let Perfect Be the Enemy of Good</h2>
       <p>The best emergency response plan is the one you have and use, not the perfect one you never finish.</p>
 
-      <p>Start with one scenario. Document basic procedures. Train a few people. Run one drill. Then build from there.</p>
+      <p>Start with one scenario, write down the basic procedures, train a few people, and run one drill. Then build from there.</p>
 
       <h2>Need Professional Help?</h2>
       <p>We write emergency response plans that staff can follow under stress. <a href="/contact">Contact us</a> for a consultation.</p>

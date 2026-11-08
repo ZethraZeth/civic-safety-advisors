@@ -10,7 +10,7 @@ export function CTABanner() {
               Start with a free 30-minute call
             </h2>
             <p className="mt-2 text-sm sm:text-base text-white/75">
-              Tell us what is going on at your organization and we will tell you where we would start. The conversation is confidential.
+              Tell us, in confidence, what is going on at your organization, and we will tell you where we would start.
             </p>
           </div>
           <div className="flex gap-3">

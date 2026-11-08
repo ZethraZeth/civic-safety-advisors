@@ -14,7 +14,7 @@ export function AssessmentPromo() {
       <p className="text-xs font-semibold uppercase tracking-wider text-brass-500 font-serif">Free tool</p>
       <h2 className="mt-2 text-2xl font-bold tracking-tight text-white">Security Self-Assessment</h2>
       <p className="mt-2 text-sm leading-6 text-white/75">
-        Twenty minutes, about 25 questions, no account. Find out where you stand before you spend anything.
+        About 25 questions in 20 minutes, with no account required. Find out where you stand before you spend anything.
       </p>
       <ul className="mt-5 space-y-3">
         {points.map(({ Icon, text }) => (

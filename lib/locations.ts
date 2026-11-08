@@ -21,7 +21,7 @@ export const locations: Location[] = [
     answer: "Civic Safety Advisors is based in Branford, Connecticut and serves houses of worship, schools, property managers, and nonprofits across the state with on-site security assessments, emergency plans, and training. We prepare the vulnerability assessments that the federal Nonprofit Security Grant Program and the Connecticut NSGP require.",
     name: "Connecticut",
     abbreviation: "CT",
-    description: "Connecticut is home. We work with municipalities, nonprofits, schools, houses of worship, and housing providers across the state.",
+    description: "Connecticut is where we are based and where most of our work is. We work with municipalities, nonprofits, schools, houses of worship, and housing providers across the state.",
     localContext: "Connecticut runs its nonprofit security grants through DESPP's Division of Emergency Management and Homeland Security, and it relies on municipal police and fire departments whose resources and response times differ from New Haven and Hartford to the suburbs and small towns. We know those agencies and those programs, and we build plans around what your town will actually do when called.",
     metaDescription: "Public safety consulting in Connecticut. Serving municipalities, nonprofits, schools, and healthcare organizations across CT with training, audits, and emergency planning.",
     whoWeServe: [
@@ -35,27 +35,27 @@ export const locations: Location[] = [
     keyServices: [
       {
         title: "Security Strategy & Public Safety Coordination",
-        description: "What your town's police, fire, and emergency management already provide, and what you still need to arrange yourself.",
+        description: "We work out what your town's police, fire, and emergency management already provide and what you still need to arrange yourself.",
         serviceSlug: "security-strategy-coordination"
       },
       {
         title: "Emergency Response Planning",
-        description: "Response procedures for each type of incident, coordinated with your local departments and DEMHS guidance.",
+        description: "We write response procedures for each type of incident, coordinated with your local departments and DEMHS guidance.",
         serviceSlug: "emergency-response-plans"
       },
       {
         title: "Threat & Vulnerability Assessment",
-        description: "Site assessments written to the format the federal NSGP and the Connecticut NSGP require.",
+        description: "We write site assessments in the format the federal NSGP and the Connecticut NSGP require.",
         serviceSlug: "threat-vulnerability-assessment"
       },
       {
         title: "Staff Training Programs",
-        description: "Security awareness training for nonprofit, school, and municipal staff, on site anywhere in the state.",
+        description: "We deliver security awareness training to nonprofit, school, and municipal staff, on site anywhere in the state.",
         serviceSlug: "staff-training"
       },
       {
         title: "Policy & Procedure Review",
-        description: "A read of your policies, incident forms, and post orders against Connecticut law and how your building actually runs.",
+        description: "We read your policies, incident forms, and post orders against Connecticut law and how your building actually runs.",
         serviceSlug: "policy-procedure-review"
       }
     ]
@@ -79,27 +79,27 @@ export const locations: Location[] = [
     keyServices: [
       {
         title: "Security Strategy & Public Safety Coordination",
-        description: "What your local agencies already provide, and where private security is worth paying for.",
+        description: "We work out what your local agencies already provide and where private security is worth paying for.",
         serviceSlug: "security-strategy-coordination"
       },
       {
         title: "Emergency Operations Planning",
-        description: "How your organization keeps running, or gets running again, after an incident.",
+        description: "We plan how your organization keeps running, or gets running again, after an incident.",
         serviceSlug: "emergency-operations-plans"
       },
       {
         title: "Physical Security Review",
-        description: "A walk-through of doors, locks, lighting, cameras, and alarms, with findings ranked by cost and risk.",
+        description: "We walk through doors, locks, lighting, cameras, and alarms and rank the findings by cost and risk.",
         serviceSlug: "physical-security-review"
       },
       {
         title: "Safety Response Team Training",
-        description: "Training for volunteer and staff safety teams at schools, houses of worship, and community organizations.",
+        description: "We train volunteer and staff safety teams at schools, houses of worship, and community organizations.",
         serviceSlug: "safety-team-training"
       },
       {
         title: "Building Access Control",
-        description: "Doors, keys, codes, and visitor check-in for buildings the public walks into every day.",
+        description: "We review doors, keys, codes, and visitor check-in for buildings the public walks into every day.",
         serviceSlug: "building-access-control"
       }
     ]
@@ -123,27 +123,27 @@ export const locations: Location[] = [
     keyServices: [
       {
         title: "Security Strategy & Public Safety Coordination",
-        description: "What your town already provides, and where private security is worth the cost.",
+        description: "We work out what your town already provides and where private security is worth the cost.",
         serviceSlug: "security-strategy-coordination"
       },
       {
         title: "Emergency Response Planning",
-        description: "Response procedures for each type of incident, coordinated with your local police and fire departments.",
+        description: "We write response procedures for each type of incident, coordinated with your local police and fire departments.",
         serviceSlug: "emergency-response-plans"
       },
       {
         title: "Threat & Vulnerability Assessment",
-        description: "Site assessments with findings ranked by cost and risk, written to support grant and insurance applications.",
+        description: "We do site assessments with findings ranked by cost and risk, written to support grant and insurance applications.",
         serviceSlug: "threat-vulnerability-assessment"
       },
       {
         title: "Staff Training Programs",
-        description: "Security awareness training for staff and volunteers, on site or remote.",
+        description: "We deliver security awareness training to staff and volunteers, on site or remote.",
         serviceSlug: "staff-training"
       },
       {
         title: "Video Systems Review",
-        description: "Whether your cameras cover the right places, record usable footage, and are ever watched.",
+        description: "We check whether your cameras cover the right places, record usable footage, and are ever watched.",
         serviceSlug: "video-systems-review"
       }
     ]
@@ -167,27 +167,27 @@ export const locations: Location[] = [
     keyServices: [
       {
         title: "Security Strategy & Public Safety Coordination",
-        description: "What your town already provides, and what you still need to arrange yourself.",
+        description: "We work out what your town already provides and what you still need to arrange yourself.",
         serviceSlug: "security-strategy-coordination"
       },
       {
         title: "Emergency Operations Planning",
-        description: "How your organization keeps running, or gets running again, after an incident.",
+        description: "We plan how your organization keeps running, or gets running again, after an incident.",
         serviceSlug: "emergency-operations-plans"
       },
       {
         title: "Physical Security Review",
-        description: "A walk-through of doors, locks, lighting, cameras, and alarms, with findings ranked by cost and risk.",
+        description: "We walk through doors, locks, lighting, cameras, and alarms and rank the findings by cost and risk.",
         serviceSlug: "physical-security-review"
       },
       {
         title: "Safety Response Team Training",
-        description: "Training for volunteer and staff safety teams at schools, nonprofits, and community organizations.",
+        description: "We train volunteer and staff safety teams at schools, nonprofits, and community organizations.",
         serviceSlug: "safety-team-training"
       },
       {
         title: "Policy & Procedure Review",
-        description: "A read of your policies, incident forms, and post orders against Rhode Island law and how your building actually runs.",
+        description: "We read your policies, incident forms, and post orders against Rhode Island law and how your building actually runs.",
         serviceSlug: "policy-procedure-review"
       }
     ]

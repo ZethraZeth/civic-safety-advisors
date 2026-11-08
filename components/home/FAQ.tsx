@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "How do you coordinate with local public safety agencies?",
     answer:
-      "We start there. We find out what your municipal police, fire, and emergency management agencies already provide, then identify where a private security measure would add something they do not. That keeps you from paying for the same thing twice and keeps the local responders in the loop on your plan.",
+      "That is where every engagement starts. We find out what your municipal police, fire, and emergency management agencies already provide, then identify where a private security measure would add something they do not. That keeps you from paying for the same thing twice and keeps the local responders in the loop on your plan.",
   },
   {
     question: "What makes your approach different from other security consultants?",
@@ -44,7 +44,7 @@ export function FAQ() {
         <SectionHeading
           eyebrow="Frequently Asked Questions"
           title="Common Questions About Our Services"
-          subtitle="Where we work, who we work with, and how an engagement runs."
+          subtitle="Answers on where we work, who we work with, and how an engagement runs."
         />
 
         <div className="mt-10 mx-auto max-w-3xl space-y-8">

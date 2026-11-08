@@ -4,7 +4,7 @@ const items = [
   {
     title: "We know these buildings",
     text:
-      "Public-facing facilities, volunteer teams, and a culture that has to survive the security program. That is all we work on.",
+      "We work only in public-facing facilities with volunteer teams and a culture that has to survive the security program.",
   },
   {
     title: "Recommendations you can act on",
