@@ -59,7 +59,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-ink-900">
-            Understanding {location.name}'s Public Safety Landscape
+            Working in {location.name}
           </h2>
           <p className="mt-4 text-base leading-7 text-slate-600">
             {location.localContext}
@@ -112,7 +112,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
             Our Services in {location.name}
           </h2>
           <p className="mt-4 text-base text-slate-600">
-            We provide comprehensive public safety consulting services to {location.name} organizations:
+            What we do most often for {location.name} organizations:
           </p>
           <div className="mt-8 space-y-6">
             {location.keyServices.map((service, idx) => (
@@ -151,9 +151,8 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
             Schedule a Safety Strategy Call
           </h2>
           <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
-            Ready to discuss public safety consulting for your {location.name} organization?
-            Let's talk about how we can help you develop practical, effective security programs
-            that coordinate with local resources and respect your mission.
+            Tell us about your {location.name} organization and we will tell you where we would
+            start. The first 30-minute call is free.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center">
             <Button

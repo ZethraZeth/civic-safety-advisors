@@ -48,7 +48,7 @@ export function WhoWeServe() {
         <SectionHeading
           eyebrow="Who We Serve"
           title="Mission-Driven Organizations Across the Northeast"
-          subtitle="We specialize in serving organizations that serve their communities—from municipal agencies to nonprofits, schools, and faith-based institutions."
+          subtitle="Municipal agencies, nonprofits, schools, healthcare facilities, faith communities, and community centers."
         />
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

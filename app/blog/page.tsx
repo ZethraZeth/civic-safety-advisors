@@ -5,7 +5,7 @@ export const metadata = {
   title: "Security Planning Blog",
   alternates: { canonical: "/blog" },
   description:
-    "Practical public safety guidance for Connecticut, New York, Massachusetts, and Rhode Island organizations. Expert perspectives on protecting houses of worship, schools, nonprofits, and municipalities.",
+    "Practical security planning guidance for houses of worship, schools, housing providers, nonprofits, and municipalities in Connecticut, New York, Massachusetts, and Rhode Island.",
 };
 
 export default function BlogPage() {
@@ -16,11 +16,11 @@ export default function BlogPage() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl">
-              Security Insights & Resources
+              Security Planning Blog
             </h1>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              Practical guidance, industry updates, and expert perspectives on protecting
-              your organization.
+              Emergency plans, hiring guards, what to fix before buying cameras, and where a house
+              of worship should start.
             </p>
           </div>
         </div>

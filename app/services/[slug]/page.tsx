@@ -102,7 +102,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-ink-900">Our Process</h2>
           <p className="mt-2 text-base text-slate-600">
-            We follow a structured approach to ensure comprehensive results:
+            How the work runs:
           </p>
 
           <div className="mt-8 space-y-6">
@@ -130,7 +130,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               {service.title} Services Across Connecticut, New York, Massachusetts, and Rhode Island
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-600">
-              We provide {service.title.toLowerCase()} services to mission-driven organizations throughout our primary service region in the Northeast. Whether you're a municipality in Connecticut, a nonprofit in New York, a school in Massachusetts, or a healthcare facility in Rhode Island, we bring the same strategic approach and practical expertise to every engagement.
+              We provide {service.title.toLowerCase()} on site to organizations in Connecticut, New York, Massachusetts, and Rhode Island.
             </p>
             <div className="mt-8">
               <p className="text-sm font-semibold text-ink-900 mb-4">
@@ -149,7 +149,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                 ))}
               </div>
               <p className="mt-6 text-sm text-slate-600">
-                We also provide virtual consulting services nationwide. Organizations outside our primary service region can access our expertise through remote assessments, policy reviews, and training program development.
+                Outside those four states we work remotely: desk-based assessments, policy reviews, and training development.
               </p>
             </div>
           </div>
@@ -164,8 +164,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               Related Services
             </h2>
             <p className="mt-2 text-base text-slate-600">
-              These services complement {service.title.toLowerCase()} and may be of
-              interest:
+              Often paired with {service.title.toLowerCase()}:
             </p>
 
             <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -208,8 +207,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             Request This Service
           </h2>
           <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
-            Ready to strengthen your organization's security? Contact us to schedule a
-            consultation and discuss your specific needs.
+            Tell us about your building and we will tell you where we would start. The first
+            30-minute call is free.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center">
             <Button

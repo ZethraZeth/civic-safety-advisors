@@ -6,14 +6,14 @@ const items = [
   {
     title: "Houses of Worship",
     text:
-      "Churches, synagogues, mosques, and temples deserve to be sanctuaries of peace. We help ensure they stay that way.",
+      "Churches, synagogues, mosques, and temples need to stay open and welcoming. We help them do that safely.",
     image: "/assets/images/industries/worship.jpg",
     href: "/industries#houses-of-worship",
   },
   {
     title: "Schools & Educational Institutions",
     text:
-      "From K-12 to higher education, we help create safe learning environments for students and staff.",
+      "K-12 through higher education: controlled entry, drills that do not frighten students, and staff who know the plan.",
     image: "/assets/images/industries/school.jpg",
     href: "/industries#schools",
   },
@@ -27,7 +27,7 @@ const items = [
   {
     title: "Nonprofits & Public Organizations",
     text:
-      "Community centers, libraries, and public service organizations have unique security needs we understand.",
+      "Community centers, libraries, and social service agencies: open buildings, small staffs, and tight budgets.",
     image: "/assets/images/industries/nonprofit.jpg",
     href: "/industries#nonprofits",
   },
@@ -40,7 +40,7 @@ export function IndustriesWeServe() {
         <SectionHeading
           eyebrow="Industries"
           title="Dedicated to organizations that serve others"
-          subtitle="Security programs that protect people and mission—without turning your space into a fortress."
+          subtitle="Security programs that protect people and mission without turning your space into a fortress."
         />
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

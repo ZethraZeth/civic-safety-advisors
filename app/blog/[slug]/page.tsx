@@ -111,11 +111,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="rounded-2xl bg-ink-900 px-6 py-12 text-center sm:px-12">
           <h2 className="text-3xl font-bold tracking-tight text-white">
-            Need Expert Security Guidance?
+            Questions About Your Own Building?
           </h2>
           <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
-            Contact us to discuss how we can help strengthen your organization's
-            security program.
+            Tell us what you are dealing with and we will tell you where we would start.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center">
             <Button

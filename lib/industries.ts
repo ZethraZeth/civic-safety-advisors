@@ -15,7 +15,7 @@ export const industries: Industry[] = [
     answer: "Houses of worship need security that keeps the doors open and the greeting warm while giving a few trained people a plan for the rare bad day. We assess the building, train a volunteer safety team, write the response plan, and prepare the vulnerability assessment that federal and Connecticut security grants require.",
     title: "Houses of Worship",
     description:
-      "Churches, synagogues, mosques, temples, and other faith communities face unique security challenges. Your doors are open to all, your congregations include vulnerable populations, and your mission is one of peace and welcome—not suspicion and barriers. We help houses of worship develop security programs that protect without compromising the welcoming atmosphere essential to your mission.",
+      "Churches, synagogues, mosques, temples, and other faith communities keep their doors open to anyone, gather children and older adults in the same building, and exist to welcome people rather than screen them. We help houses of worship build security programs that protect the congregation without changing what it feels like to walk in.",
     challenges: [
       "Balancing openness with security",
       "Volunteer security team development",
@@ -36,7 +36,7 @@ export const industries: Industry[] = [
     answer: "Schools and colleges need security that works alongside learning: controlled entry, staff who know the plan, drills that do not frighten students, and coordination with local police. We review the building and the procedures together and produce a plan the administration can defend to parents and the board.",
     title: "Schools & Educational Institutions",
     description:
-      "From elementary schools to universities, educational institutions must balance safety with an environment conducive to learning. Overly restrictive security measures can create anxiety; insufficient measures put students and staff at risk. We help schools develop comprehensive, age-appropriate security programs that protect without creating a fortress mentality.",
+      "From elementary schools to universities, schools have to keep students safe without making the building feel like a place where something is about to go wrong. Too much visible security frightens students; too little leaves them exposed. We help schools build age-appropriate security programs that the administration can explain to parents and the board.",
     challenges: [
       "Campus access control",
       "Visitor management",
@@ -79,7 +79,7 @@ export const industries: Industry[] = [
     answer: "Nonprofits, libraries, community centers, and social service agencies serve the public in open buildings with small staffs and tight budgets. We find the low-cost procedural fixes first, then help you make the case for grants and capital when hardware is warranted.",
     title: "Nonprofits & Public Organizations",
     description:
-      "Community centers, libraries, social service agencies, and other public organizations serve diverse populations—often including vulnerable individuals. Your facilities may host public meetings, provide services to at-risk populations, and operate with limited budgets and staff. We help public organizations implement practical, cost-effective security measures that protect staff, clients, and facilities.",
+      "Community centers, libraries, social service agencies, and other public organizations serve whoever walks in, including people in crisis. The buildings host public meetings, the staff are small, and the budgets are tight. We find the procedural fixes that cost little, then help you make the case for grants and capital when hardware is warranted.",
     challenges: [
       "Limited security budgets",
       "High-traffic public access areas",

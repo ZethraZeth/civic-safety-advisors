@@ -33,8 +33,8 @@ export function Footer() {
               </div>
             </div>
             <p className="mt-3 text-sm text-white/75 max-w-sm">
-              Security consulting for mission-driven organizations—practical assessments,
-              clear action plans, and training that builds lasting safety culture.
+              Security consulting for houses of worship, schools, housing providers, and public
+              organizations: assessments, plans, and training.
             </p>
           </div>
 

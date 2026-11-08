@@ -15,11 +15,11 @@ export function ServicesOverview() {
         <SectionHeading
           eyebrow="Services"
           title="How we help protect your organization"
-          subtitle="We begin by aligning public safety resources with your private security efforts—establishing strategy before execution. The services below support that coordination, not the other way around."
+          subtitle="We start by working out what your local public safety agencies already provide and what you still need. Everything below follows from that."
         />
 
         <p className="mt-6 max-w-3xl text-sm leading-6 text-slate-600">
-          Policy and compliance establish the framework. Physical security and training execute within it. Every recommendation reflects what makes strategic sense—not what can be sold.
+          Policy and compliance come first. Physical security and training are built on top of them. We do not sell equipment, so every recommendation is what makes sense for you, not what can be sold to you.
         </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

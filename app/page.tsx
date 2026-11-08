@@ -46,7 +46,7 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="mt-5 text-base leading-7 text-white/80 sm:text-lg">
-                We help mission-driven organizations identify real risks, clarify response responsibilities, and make defensible security decisions—before spending money on guards, cameras, or training.
+                We help mission-driven organizations identify the risks that apply to them, settle who does what in a response, and make security decisions they can defend, before spending money on guards, cameras, or training.
               </p>
               <p className="mt-4 text-sm font-bold text-brass-500">
                 Serving Connecticut, New York, Massachusetts, and Rhode Island

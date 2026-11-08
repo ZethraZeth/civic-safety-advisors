@@ -2,19 +2,19 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const items = [
   {
-    title: "Community-focused expertise",
+    title: "We know these buildings",
     text:
-      "We specialize in mission-driven environments. We understand public-facing facilities, volunteer teams, and the need to protect without disrupting culture.",
+      "Public-facing facilities, volunteer teams, and a culture that has to survive the security program. That is all we work on.",
   },
   {
-    title: "Practical, actionable recommendations",
+    title: "Recommendations you can act on",
     text:
       "No generic checklists or product catalogs. You get judgment on what not to buy, what public resources can handle, and what actually requires investment.",
   },
   {
-    title: "Partnership approach",
+    title: "We stay available",
     text:
-      "We provide ongoing advisory support—not one-time reports. Sustained guidance as needs evolve, budgets shift, and coordination with public safety deepens.",
+      "The report is not the end of the engagement. We stay on call as budgets shift, staff turn over, and your relationship with local agencies develops.",
   },
 ];
 
@@ -25,7 +25,7 @@ export function WhyChooseUs() {
         <SectionHeading
           eyebrow="Why us"
           title="Why choose Civic Safety Advisors"
-          subtitle="Authoritative guidance, tailored to your environment and your budget reality."
+          subtitle="Guidance fitted to your building and your budget."
         />
 
         <div className="mt-10 grid gap-6 lg:grid-cols-3">

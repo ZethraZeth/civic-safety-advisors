@@ -6,7 +6,7 @@ export const metadata = {
   title: "About Seth Hershman and Civic Safety Advisors",
   alternates: { canonical: "/about" },
   description:
-    "Public safety consulting for mission-driven organizations throughout Connecticut, New York, Massachusetts, and Rhode Island. Led by Seth Hershman, we coordinate public safety resources with private security to protect what matters most.",
+    "Civic Safety Advisors is a security consulting firm in Branford, Connecticut, founded by Seth Hershman, a former Yale University Police detective and Connecticut DESPP policy advisor. We serve houses of worship, schools, property managers, and public organizations in Connecticut, New York, Massachusetts, and Rhode Island.",
 };
 
 export default function AboutPage() {
@@ -50,16 +50,16 @@ export default function AboutPage() {
               </h2>
               <div className="mt-6 space-y-4 text-base leading-7 text-slate-600">
                 <p>
-                  Civic Safety Advisors was founded with a singular purpose: to help mission-driven
-                  organizations navigate the intersection between public safety resources and private
-                  security investments. Houses of worship, schools, and community organizations deserve
-                  strategic guidance that respects their mission, budget reality, and relationship with
-                  local public safety agencies.
+                  Civic Safety Advisors exists to help houses of worship, schools, housing providers,
+                  and community organizations work out what their local public safety agencies already
+                  provide and what they still need to arrange and pay for themselves. Those organizations
+                  deserve advice that respects their mission, their budget, and their relationship with
+                  the local police and fire departments.
                 </p>
                 <p>
-                  We believe that effective security begins with coordination, not equipment. Our mission
-                  is to provide judgment on what public resources can already provide, when private
-                  investment makes sense, and how to avoid duplication, gaps, and wasted spend.
+                  Good security starts with coordination, not equipment. Our job is to give you judgment
+                  on what public resources already cover, when private investment makes sense, and how to
+                  avoid paying twice or leaving a gap.
                 </p>
               </div>
             </div>
@@ -94,40 +94,40 @@ export default function AboutPage() {
 
               <div className="mt-6 space-y-4 text-base leading-7 text-slate-600">
                 <p>
-                  Seth Hershman brings a unique combination of law enforcement experience, emergency
-                  management policy expertise, and practical security operations to Civic Safety Advisors.
-                  His background positions him to navigate the complex intersection between public safety
-                  resources and private security needs.
+                  Seth Hershman has worked on both sides of the line this firm sits on: as a police
+                  officer and detective responding to incidents, and as a state policy advisor shaping how
+                  emergency management support reaches religious institutions, schools, and community
+                  organizations.
                 </p>
 
                 <p>
                   As a <strong>Senior Policy Advisor</strong> with the Connecticut Department of Emergency
-                  Services and Public Protection (DESPP), Seth developed and implemented comprehensive
-                  emergency management strategies for religious institutions, academic organizations, and
-                  community entities. He fostered collaborative relationships between government agencies
-                  and mission-driven organizations, focusing on practical safety measures that respect
-                  institutional culture and budget constraints.
+                  Services and Public Protection (DESPP), Seth developed emergency management strategies
+                  for religious institutions, schools, and community organizations and put them into
+                  practice. Much of the work was building working relationships between state agencies and
+                  the organizations they serve, with an emphasis on measures those organizations could
+                  afford and would actually use.
                 </p>
 
                 <p>
-                  Prior to his policy work, Seth served with the <strong>Yale University Police Department</strong> for
-                  over six years, advancing from patrol officer to detective. This operational experience
-                  included emergency response, community policing, comprehensive investigations, and working
-                  directly with diverse institutional populations. He understands both the tactical realities
-                  of security operations and the importance of maintaining welcoming environments.
+                  Before that, Seth served with the <strong>Yale University Police Department</strong> for
+                  over six years, moving from patrol officer to detective. The work covered emergency
+                  response, community policing, investigations, and daily contact with students, staff, and
+                  visitors, which is where he learned how security and an open, welcoming environment
+                  can coexist.
                 </p>
 
                 <p>
                   Seth holds a <strong>Master of Science in Investigations</strong> from the University of New Haven (2024)
-                  and maintains a Federal Firearms License (FFL 08), providing deep expertise in regulatory
+                  and maintains a Federal Firearms License (FFL 08), which keeps him current on regulatory
                   compliance, vendor sourcing, and security coordination.
                 </p>
 
                 <p>
-                  Through Civic Safety Advisors, Seth focuses on helping organizations leverage existing public
-                  safety resources effectively before recommending private security investments—ensuring every
-                  dollar spent on security genuinely reduces risk rather than duplicating services already
-                  available.
+                  At Civic Safety Advisors, Seth starts every engagement by finding out what public safety
+                  resources the organization already has before recommending anything private. The aim is
+                  that every dollar spent on security reduces risk rather than paying for something the town
+                  already provides.
                 </p>
               </div>
             </div>
@@ -143,8 +143,7 @@ export default function AboutPage() {
               Our Approach
             </h2>
             <p className="mt-4 text-center text-base text-slate-600 max-w-2xl mx-auto">
-              We follow a proven methodology that ensures practical, actionable results for
-              every client we serve.
+              Every engagement follows the same five steps.
             </p>
 
             <div className="mt-12 grid gap-8">
@@ -174,8 +173,7 @@ export default function AboutPage() {
               Why Choose Civic Safety Advisors
             </h2>
             <p className="mt-4 text-base text-slate-600 max-w-2xl mx-auto">
-              We bring specialized expertise, practical experience, and a deep understanding of
-              the unique challenges facing mission-driven organizations.
+              What you get when you work with us.
             </p>
           </div>
 
@@ -195,10 +193,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white">
-              Let's Discuss Your Security Needs
+              Talk to Us About Your Organization
             </h2>
             <p className="mt-4 text-lg text-white/80">
-              Schedule a free consultation to learn how we can help protect your organization.
+              The first 30-minute call is free. Tell us what is going on and we will tell you where we would start.
             </p>
             <div className="mt-8">
               <Button href="/contact" variant="primary" className="bg-brass-500 hover:bg-brass-600 focus:ring-brass-500">
@@ -216,7 +214,7 @@ const approachSteps = [
   {
     title: "Listen & Understand",
     description:
-      "Every organization is unique. We start by understanding your mission, culture, concerns, and constraints.",
+      "We start by learning your mission, your culture, what worries you, and what you can and cannot change.",
   },
   {
     title: "Coordinate & Assess",
@@ -226,30 +224,30 @@ const approachSteps = [
   {
     title: "Recommend & Prioritize",
     description:
-      "We deliver clear, actionable recommendations prioritized by risk level and budget considerations.",
+      "You get recommendations ranked by risk and by cost, so you know what to do first.",
   },
   {
     title: "Implement & Train",
     description:
-      "We don't just advise—we help you implement changes and train your people to maintain security long-term.",
+      "We help you put the changes in place and train the people who will keep them working.",
   },
   {
     title: "Partner & Support",
     description:
-      "Security is ongoing. We remain available to support your organization as needs evolve.",
+      "We stay available as your needs, your staff, and your budget change.",
   },
 ];
 
 const whyChooseUs = [
   {
-    title: "Specialized Focus",
+    title: "One Kind of Client",
     description:
-      "We work exclusively with houses of worship, schools, and public organizations—not corporate clients seeking different outcomes.",
+      "We work only with houses of worship, schools, housing providers, and public organizations. No corporate clients.",
   },
   {
     title: "Practical Experience",
     description:
-      "Our recommendations are grounded in real-world experience, not theoretical frameworks.",
+      "Our recommendations come from police and emergency management work, not from a template.",
   },
   {
     title: "Budget-Conscious Solutions",
@@ -259,16 +257,16 @@ const whyChooseUs = [
   {
     title: "Compliance Knowledge",
     description:
-      "We stay current on state licensing requirements, regulatory standards, and best practices.",
+      "We stay current on the licensing requirements and regulatory standards in the four states we serve.",
   },
   {
-    title: "Training Excellence",
+    title: "Training for Non-Specialists",
     description:
-      "Our training programs are designed for non-security professionals—your staff, volunteers, and safety team members.",
+      "Our training is written for staff, volunteers, and safety team members, not for security professionals.",
   },
   {
     title: "Partnership Approach",
     description:
-      "We don't just hand you a report and leave. We partner with you to implement changes, train your teams, and build lasting security culture.",
+      "We stay after the report is delivered: helping you make the changes, training your teams, and checking back.",
   },
 ];

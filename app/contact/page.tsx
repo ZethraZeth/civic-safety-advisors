@@ -20,7 +20,7 @@ export default function ContactPage() {
               Contact Us
             </h1>
             <p className="mt-4 text-lg text-slate-600">
-              Ready to discuss your organization's security needs? We're here to help.
+              Tell us what is going on at your organization. We reply within one business day.
             </p>
           </div>
         </div>
@@ -148,21 +148,21 @@ const faqs = [
   {
     question: "How much do your services cost?",
     answer:
-      "Our fees vary based on the scope of work, size of your organization, and services needed. We provide detailed proposals after an initial consultation. We're committed to working within nonprofit and public organization budgets.",
+      "Fees depend on the scope of work, the size of your organization, and which services you need. You get a detailed proposal after the first consultation. We work within nonprofit and public organization budgets.",
   },
   {
     question: "Do you work with organizations outside your local area?",
     answer:
-      "Yes! While we prefer on-site assessments when possible, we work with organizations nationwide and can conduct many services remotely or through travel arrangements.",
+      "Yes. We prefer to be on site for assessments, but we work with organizations nationwide, remotely or by traveling.",
   },
   {
     question: "How long does a typical assessment take?",
     answer:
-      "A comprehensive threat and vulnerability assessment typically takes 2-4 weeks from initial engagement to final report delivery, depending on the size and complexity of your facility.",
+      "A threat and vulnerability assessment usually takes two to four weeks from kickoff to final report, depending on the size and complexity of your facility.",
   },
   {
     question: "Do you provide ongoing support after the assessment?",
     answer:
-      "Absolutely. We believe in long-term partnerships. Many clients retain us for ongoing consultation, periodic reassessments, and training updates.",
+      "Yes. Many clients keep us on for ongoing consultation, periodic reassessments, and training refreshers.",
   },
 ];

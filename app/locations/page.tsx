@@ -37,8 +37,8 @@ export default function LocationsPage() {
             Our Primary Service Region
           </h2>
           <p className="mt-4 text-base text-slate-600">
-            We focus on the Northeast, where we maintain strong relationships with local public
-            safety agencies and understand the specific challenges facing organizations in each state.
+            We work in the Northeast because that is where we know the public safety agencies, the
+            licensing rules, and the grant programs in each state.
           </p>
         </div>
 
@@ -79,16 +79,14 @@ export default function LocationsPage() {
               Virtual Consulting & National Reach
             </h2>
             <p className="mt-6 text-base leading-7 text-slate-600">
-              While our primary focus is Connecticut, New York, Massachusetts, and Rhode Island,
-              we provide virtual consulting services to mission-driven organizations nationwide.
-              Many of our services—including policy review, training program development, and
-              strategic planning—can be delivered effectively through remote collaboration.
+              Our primary focus is Connecticut, New York, Massachusetts, and Rhode Island, but we
+              work remotely with organizations anywhere in the country. Policy review, training
+              development, and strategic planning all work well over video.
             </p>
             <p className="mt-4 text-base leading-7 text-slate-600">
-              For organizations outside our primary region requiring on-site assessments,
-              training delivery, or tabletop exercises, we arrange travel engagements anywhere
-              in the United States. Our approach remains consistent: strategic coordination,
-              practical recommendations, and respect for your organization's mission and budget.
+              If you are outside our primary region and need someone in the building, for a site
+              assessment, training, or a tabletop exercise, we travel. The work is the same wherever
+              you are.
             </p>
             <div className="mt-8 flex justify-center">
               <Button href="/contact" variant="brass">
@@ -135,8 +133,7 @@ export default function LocationsPage() {
               Ready to Discuss Your Organization's Location?
             </h2>
             <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
-              Whether you're in our primary Northeast region or need virtual consulting nationwide,
-              we're here to help you develop practical, effective public safety programs.
+              Tell us where you are and what you are worried about. The first 30-minute call is free.
             </p>
             <div className="mt-8">
               <Button

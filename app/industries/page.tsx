@@ -9,7 +9,7 @@ export const metadata = {
   title: "Industries: Houses of Worship, Schools, Property Management, Nonprofits",
   alternates: { canonical: "/industries" },
   description:
-    "Specialized public safety consulting for Connecticut, New York, Massachusetts, and Rhode Island. Serving houses of worship, schools, property management companies, housing providers, nonprofits, and municipalities with practical security assessments and planning.",
+    "Security consulting in Connecticut, New York, Massachusetts, and Rhode Island for houses of worship, schools, property management companies, housing providers, nonprofits, and municipalities: assessments, plans, and training.",
 };
 
 export default function IndustriesPage() {
@@ -23,8 +23,8 @@ export default function IndustriesPage() {
               Industries We Serve
             </h1>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              Specialized security consulting for organizations with unique missions and
-              challenges.
+              Four kinds of organizations, each with its own security problems: houses of worship,
+              schools, housing providers, and nonprofits and public organizations.
             </p>
           </div>
         </div>
@@ -113,11 +113,10 @@ export default function IndustriesPage() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white">
-              Every Organization Deserves Expert Security Guidance
+              Not Sure Which of These You Are?
             </h2>
             <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
-              No matter what sector you serve, we're here to help you protect your
-              mission, your people, and your community.
+              Tell us what your organization does and we will tell you where we would start.
             </p>
             <div className="mt-8">
               <Button
@@ -125,7 +124,7 @@ export default function IndustriesPage() {
                 variant="primary"
                 className="bg-brass-500 hover:bg-brass-600 focus:ring-brass-500"
               >
-                Let's Talk About Your Needs
+                Talk to Us
               </Button>
             </div>
           </div>

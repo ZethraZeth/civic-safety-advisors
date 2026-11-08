@@ -54,7 +54,7 @@ export default function TermsPage() {
 
             <h2>Limitation of Liability</h2>
             <p>
-              Our security assessments and recommendations are based on best practices and
+              Our security assessments and recommendations are based on current standards and
               professional judgment. However, no security system or plan can guarantee
               complete protection against all threats. Civic Safety Advisors is not liable
               for:

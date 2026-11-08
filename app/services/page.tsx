@@ -13,7 +13,7 @@ export const metadata = {
   title: "Security Consulting Services: Assessments, Plans, Training",
   alternates: { canonical: "/services" },
   description:
-    "Comprehensive public safety consulting services for Connecticut, New York, Massachusetts, and Rhode Island organizations. Security strategy, policy review, emergency planning, workplace violence assessment, and training for houses of worship, schools, property managers, nonprofits, and municipalities.",
+    "Security consulting for organizations in Connecticut, New York, Massachusetts, and Rhode Island: security strategy, policy review, emergency planning, workplace violence assessment, and training for houses of worship, schools, property managers, nonprofits, and municipalities.",
 };
 
 export default function ServicesPage() {
@@ -29,8 +29,8 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              We begin with strategy—coordinating public safety resources and private security investments.
-              Policy, physical security, and training follow as execution, not the starting point.
+              We start with strategy: what your local public safety agencies already provide, and what you
+              still need to arrange yourself. Policy, physical security, and training follow from that.
             </p>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function ServicesPage() {
               Our Engagement Process
             </h2>
             <p className="mt-4 text-center text-base text-slate-600">
-              We follow a structured process to ensure every engagement delivers value
+              Every engagement runs in the same six steps
             </p>
 
             <div className="mt-12 space-y-6">
@@ -123,8 +123,8 @@ export default function ServicesPage() {
             Not Sure Where to Start?
           </h2>
           <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
-            Most clients begin with Security Strategy & Public Safety Coordination—establishing
-            a clear pathway before investing in equipment or personnel. Contact us for a free initial consultation.
+            Most clients begin with Security Strategy & Public Safety Coordination, which settles
+            what you need before you invest in equipment or personnel. The first consultation is free.
           </p>
           <div className="mt-8">
             <Button
@@ -152,11 +152,11 @@ const engagementSteps = [
   },
   {
     title: "Assessment & Analysis",
-    description: "On-site visits and comprehensive documentation review",
+    description: "Site visits and a read of your existing documents",
   },
   {
     title: "Report & Recommendations",
-    description: "Comprehensive findings with prioritized action plan",
+    description: "Written findings with a ranked action plan",
   },
   {
     title: "Implementation Support",

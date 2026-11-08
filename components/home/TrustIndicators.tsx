@@ -2,23 +2,23 @@ import { ShieldCheck, Puzzle, Users, FileBadge } from "lucide-react";
 
 const items = [
   {
-    title: "Comprehensive Assessments",
+    title: "Assessments",
     desc: "Facility and policy reviews that prioritize actions after coordinating with public safety partners.",
     Icon: ShieldCheck,
   },
   {
-    title: "Customized Solutions",
-    desc: "Recommendations tailored to mission, budget reality, and what public resources can already provide.",
+    title: "Recommendations, Not Products",
+    desc: "Recommendations sized to your mission, your budget, and what public resources already provide.",
     Icon: Puzzle,
   },
   {
-    title: "Expert Training Programs",
-    desc: "Practical training executed within a defined strategic framework—not one-off drills.",
+    title: "Training",
+    desc: "Training tied to your plan and your building, not one-off drills.",
     Icon: Users,
   },
   {
-    title: "Compliance Focused",
-    desc: "Guidance built for defensibility and operational clarity, not bureaucracy.",
+    title: "Compliance",
+    desc: "Documentation you can hand to a board, an insurer, or a grant reviewer.",
     Icon: FileBadge,
   },
 ];
@@ -29,7 +29,7 @@ export function TrustIndicators() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold tracking-wide text-brass-600 uppercase">
-            Trusted Security Expertise
+            What we do
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">
             Built for mission-driven organizations

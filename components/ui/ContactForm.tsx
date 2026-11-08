@@ -302,7 +302,7 @@ export function ContactForm() {
       {status === "success" && (
         <div className="rounded-md bg-green-50 p-4">
           <p className="text-sm text-green-800">
-            Thank you for your message! We'll get back to you soon.
+            Thanks. We will reply within one business day.
           </p>
         </div>
       )}

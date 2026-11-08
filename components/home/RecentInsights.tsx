@@ -10,7 +10,7 @@ export function RecentInsights() {
         <SectionHeading
           eyebrow="Insights"
           title="From our blog"
-          subtitle="Practical security guidance and industry insights."
+          subtitle="Practical guidance on security planning."
         />
 
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
