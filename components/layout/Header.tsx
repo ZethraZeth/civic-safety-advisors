@@ -14,9 +14,14 @@ const nav = [
   { href: "/services", label: "Services", hasDropdown: true },
   { href: "/locations", label: "Service Areas", hasDropdown: true },
   { href: "/industries", label: "Industries", hasDropdown: true },
-  { href: "/assessment", label: "Assessment" },
+  { href: "/resources", label: "Resources", hasDropdown: true },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
+];
+
+const resources = [
+  { href: "/assessment", label: "Free Security Self-Assessment", note: "20 minutes. Scores by area and a prioritized action list." },
+  { href: "/connecticut-nonprofit-security-grant", label: "CT Nonprofit Security Grant Guide", note: "Federal NSGP and CT-NSGP: eligibility, deadlines, the required assessment." },
 ];
 
 const serviceCategories: Array<{ key: ServiceCategory; label: string }> = [
@@ -130,6 +135,20 @@ export function Header() {
                   </div>
                 )}
 
+                {/* Resources Dropdown */}
+                {item.label === "Resources" && activeDropdown === "Resources" && (
+                  <div className="absolute top-full left-0 pt-2 z-50">
+                    <div className="w-80 bg-white rounded-lg shadow-lg border border-slate-200 py-2">
+                      {resources.map((r) => (
+                        <Link key={r.href} href={r.href} className="block px-4 py-2.5 hover:bg-slate-50">
+                          <span className="block text-sm font-semibold text-slate-800 hover:text-brass-600">{r.label}</span>
+                          <span className="block text-xs text-slate-500">{r.note}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
                 {/* Industries Dropdown */}
                 {item.label === "Industries" && activeDropdown === "Industries" && (
                   <div className="absolute top-full left-0 pt-2 z-50">
@@ -222,6 +241,17 @@ export function Header() {
                           onClick={() => setOpen(false)}
                         >
                           {location.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Mobile Resources Submenu */}
+                  {item.label === "Resources" && (
+                    <div className="pl-6 mt-1 space-y-1">
+                      {resources.map((r) => (
+                        <Link key={r.href} href={r.href} className="block px-3 py-1.5 text-xs text-slate-600 hover:bg-slate-50 rounded" onClick={() => setOpen(false)}>
+                          {r.label}
                         </Link>
                       ))}
                     </div>
