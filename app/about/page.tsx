@@ -15,7 +15,8 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-slate-50">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-          <div className="max-w-3xl">
+          <div className="lg:grid lg:grid-cols-3 lg:items-center lg:gap-16">
+          <div className="max-w-3xl lg:col-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl">
               About Civic Safety Advisors
             </h1>
@@ -23,6 +24,18 @@ export default function AboutPage() {
               Civic Safety Advisors is a security consulting firm in Branford, Connecticut, founded by Seth Hershman, a former Yale University Police detective and Connecticut DESPP policy advisor. We assess risk, write emergency plans, and train staff for houses of worship, schools, property managers, and public organizations, and we do not sell guards, cameras, or alarm systems.
             </p>
             <p className="mt-4 text-sm"><a href="https://www.linkedin.com/in/seth-hershman-08606045/" rel="me noopener" target="_blank" className="font-semibold text-ink-900 underline">Seth Hershman on LinkedIn</a></p>
+          </div>
+            <div className="mt-12 flex justify-center lg:mt-0 lg:justify-end">
+              <Image
+                src="/assets/images/csa-logo-stacked.png"
+                alt="Civic Safety Advisors"
+                width={800}
+                height={693}
+                priority
+                sizes="(min-width: 1024px) 340px, 240px"
+                className="h-auto w-60 lg:w-[340px]"
+              />
+            </div>
           </div>
         </div>
       </section>
