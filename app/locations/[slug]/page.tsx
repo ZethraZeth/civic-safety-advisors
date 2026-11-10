@@ -6,6 +6,7 @@ import { industries } from "@/lib/industries";
 import Link from "next/link";
 import * as Icons from "lucide-react";
 import { notFound } from "next/navigation";
+import { JsonLd, locationServiceLd, breadcrumbLd } from "@/components/seo/JsonLd";
 
 export async function generateStaticParams() {
   return locations.map((location) => ({
@@ -38,6 +39,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
 
   return (
     <main>
+      <JsonLd data={[locationServiceLd(location), breadcrumbLd([{ name: "Service Areas", path: "/locations" }, { name: location.name, path: `/locations/${location.slug}` }])]} />
       {/* Hero Section */}
       <section className="bg-slate-50">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">

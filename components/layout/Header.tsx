@@ -157,7 +157,7 @@ export function Header() {
                       {industries.map((industry) => (
                         <Link
                           key={industry.slug}
-                          href={`/industries#${industry.slug}`}
+                          href={`/industries/${industry.slug}`}
                           className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brass-600"
                         >
                           {industry.title}
@@ -264,7 +264,7 @@ export function Header() {
                       {industries.map((industry) => (
                         <Link
                           key={industry.slug}
-                          href={`/industries#${industry.slug}`}
+                          href={`/industries/${industry.slug}`}
                           className="block px-3 py-1.5 text-xs text-slate-600 hover:bg-slate-50 rounded"
                           onClick={() => setOpen(false)}
                         >

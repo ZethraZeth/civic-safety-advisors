@@ -89,6 +89,12 @@ export default function IndustriesPage() {
                       ))}
                     </div>
                   </div>
+
+                  <p className="mt-8">
+                    <Link href={`/industries/${industry.slug}`} className="text-sm font-semibold text-ink-900 underline hover:text-brass-600">
+                      More on our work with {industry.title.toLowerCase()} →
+                    </Link>
+                  </p>
                 </div>
 
                 {/* Image */}

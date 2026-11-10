@@ -3,6 +3,7 @@ import { SITE_URL } from "@/lib/site";
 import { services } from "@/lib/services";
 import { recentPosts } from "@/lib/blog";
 import { locations } from "@/lib/locations";
+import { industries } from "@/lib/industries";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -21,7 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.1 },
   ];
   const svc = services.map((s) => ({ url: `${SITE_URL}/services/${s.slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 }));
+  const ind = industries.map((i) => ({ url: `${SITE_URL}/industries/${i.slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 }));
   const loc = locations.map((l) => ({ url: `${SITE_URL}/locations/${l.slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.5 }));
   const posts = recentPosts.map((p) => ({ url: `${SITE_URL}/blog/${p.slug}`, lastModified: new Date(p.updatedAt ?? p.publishedAt), changeFrequency: "yearly" as const, priority: 0.6 }));
-  return [...fixed, ...svc, ...loc, ...posts];
+  return [...fixed, ...svc, ...ind, ...loc, ...posts];
 }

@@ -1,4 +1,4 @@
-import { SITE_URL, SITE_NAME, PHONE_E164, EMAIL, CITY, FOUNDER, DESCRIPTION, absoluteUrl } from "@/lib/site";
+import { SITE_URL, SITE_NAME, TAGLINE, PHONE_E164, EMAIL, CITY, FOUNDER, DESCRIPTION, OFFICE_HOURS, ORG_PROFILES, SERVICE_STATES, absoluteUrl } from "@/lib/site";
 
 /** Renders one schema.org JSON-LD block. */
 export function JsonLd({ data }: { data: Record<string, unknown> | Record<string, unknown>[] }) {
@@ -34,7 +34,20 @@ export function organizationLd() {
       "Nonprofit Security Grant Program",
     ],
     priceRange: "$$",
-    ...(FOUNDER.linkedin ? { sameAs: [FOUNDER.linkedin] } : {}),
+    slogan: TAGLINE,
+    openingHoursSpecification: [
+      { "@type": "OpeningHoursSpecification", dayOfWeek: OFFICE_HOURS.days, opens: OFFICE_HOURS.opens, closes: OFFICE_HOURS.closes },
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      telephone: PHONE_E164,
+      email: EMAIL,
+      areaServed: "US",
+      availableLanguage: "English",
+    },
+    // Business profiles when they exist; until then the founder's LinkedIn is the only public profile.
+    ...(ORG_PROFILES.length ? { sameAs: ORG_PROFILES } : FOUNDER.linkedin ? { sameAs: [FOUNDER.linkedin] } : {}),
   };
 }
 
@@ -67,6 +80,45 @@ export function serviceLd(s: { slug: string; title: string; shortDescription: st
     provider: { "@id": ORG_ID },
     areaServed: ["Connecticut", "New York", "Massachusetts", "Rhode Island"],
     serviceType: "Security consulting",
+  };
+}
+
+/** Security consulting as offered in one state; used on the location pages. */
+export function locationServiceLd(l: { slug: string; name: string; description: string; keyServices: Array<{ title: string }> }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `Security Consulting in ${l.name}`,
+    description: l.description,
+    url: `${SITE_URL}/locations/${l.slug}`,
+    provider: { "@id": ORG_ID },
+    areaServed: { "@type": "State", name: l.name },
+    serviceType: "Security consulting",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Services in ${l.name}`,
+      itemListElement: l.keyServices.map((k) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: k.title } })),
+    },
+  };
+}
+
+/** Security consulting for one kind of organization; used on the industry pages. */
+export function industryServiceLd(i: { slug: string; title: string; answer?: string; description: string; audience: string }, serviceTitles: string[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `Security Consulting for ${i.title}`,
+    description: i.answer ?? i.description,
+    url: `${SITE_URL}/industries/${i.slug}`,
+    provider: { "@id": ORG_ID },
+    areaServed: SERVICE_STATES.map((name) => ({ "@type": "State", name })),
+    serviceType: "Security consulting",
+    audience: { "@type": "Audience", audienceType: i.audience },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Services for ${i.title}`,
+      itemListElement: serviceTitles.map((name) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name } })),
+    },
   };
 }
 

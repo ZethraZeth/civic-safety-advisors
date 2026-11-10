@@ -32,19 +32,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        {/* Juristic template CSS (legal-firm look) */}
-        <link rel="stylesheet" href="/assets/css/themify-icons.css" />
-        <link rel="stylesheet" href="/assets/css/flaticon.css" />
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/assets/css/animate.css" />
-        <link rel="stylesheet" href="/assets/css/owl.carousel.css" />
-        <link rel="stylesheet" href="/assets/css/owl.theme.css" />
-        <link rel="stylesheet" href="/assets/css/slick.css" />
-        <link rel="stylesheet" href="/assets/css/slick-theme.css" />
-        <link rel="stylesheet" href="/assets/css/swiper.min.css" />
-        <link rel="stylesheet" href="/assets/css/owl.transitions.css" />
-        <link rel="stylesheet" href="/assets/css/jquery.fancybox.css" />
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        {/* Fonts used by the template styles (body: Muli, headings: Roboto Slab) */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,600,700|Roboto+Slab:300,400,500&display=swap" />
+        {/* Juristic template CSS, pruned to the rules this site uses (was 12 files, 440 KB). */}
+        <link rel="stylesheet" href="/assets/css/template.css" />
       </head>
       <body>
         <JsonLd data={[organizationLd(), personLd()]} />

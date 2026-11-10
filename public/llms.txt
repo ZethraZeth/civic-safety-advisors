@@ -9,6 +9,10 @@ Phone: (203) 676-8193. Email: info@civicsafetyadvisors.com.
 - [Connecticut Nonprofit Security Grant Program guide](https://www.civicsafetyadvisors.com/connecticut-nonprofit-security-grant): federal NSGP and state CT-NSGP eligibility, deadlines, the required vulnerability assessment, and allowable costs.
 - [Services](https://www.civicsafetyadvisors.com/services): threat and vulnerability assessments, workplace violence and employee safety assessments, policy review, emergency response plans, safety team and staff training.
 - [Industries](https://www.civicsafetyadvisors.com/industries): houses of worship, schools, property management and housing providers, nonprofits and public organizations.
+  - [Houses of worship](https://www.civicsafetyadvisors.com/industries/houses-of-worship)
+  - [Schools and colleges](https://www.civicsafetyadvisors.com/industries/schools-education)
+  - [Property managers and housing providers](https://www.civicsafetyadvisors.com/industries/property-management-housing)
+  - [Nonprofits and public organizations](https://www.civicsafetyadvisors.com/industries/nonprofits-public-organizations)
 - [About](https://www.civicsafetyadvisors.com/about): Seth Hershman's background and the firm's approach.
 - [Blog](https://www.civicsafetyadvisors.com/blog): practical guidance on security planning.
 - [Contact](https://www.civicsafetyadvisors.com/contact)

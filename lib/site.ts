@@ -7,6 +7,10 @@ export const PHONE_E164 = "+12036768193";
 export const EMAIL = "info@civicsafetyadvisors.com";
 export const CITY = "Branford";
 export const STATE = "CT";
+/** Office hours as shown on the contact page. Keep the two in step. */
+export const OFFICE_HOURS = { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "09:00", closes: "17:00" };
+/** Public profiles for the business itself (Google Business Profile, company LinkedIn page, BBB, etc.). Add URLs here as they are created. */
+export const ORG_PROFILES: string[] = [];
 export const SERVICE_STATES = ["Connecticut", "New York", "Massachusetts", "Rhode Island"];
 /** Public (teaser) assessment start page, served on this domain and proxied to the assessment app. */
 export const ASSESS_URL = "/assessment/start";

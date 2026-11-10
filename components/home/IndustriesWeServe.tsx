@@ -8,28 +8,28 @@ const items = [
     text:
       "Churches, synagogues, mosques, and temples need to stay open and welcoming. We help them do that safely.",
     image: "/assets/images/industries/worship.jpg",
-    href: "/industries#houses-of-worship",
+    href: "/industries/houses-of-worship",
   },
   {
     title: "Schools & Educational Institutions",
     text:
       "From K-12 through higher education, we help with controlled entry, drills that do not frighten students, and staff who know the plan.",
     image: "/assets/images/industries/school.jpg",
-    href: "/industries#schools",
+    href: "/industries/schools-education",
   },
   {
     title: "Property Management & Housing Providers",
     text:
       "Staff who work alone, resident and applicant interactions, and multi-site portfolios. We assess employee safety and property security together.",
     image: "/assets/images/industries/property.jpg",
-    href: "/industries#property-management-housing",
+    href: "/industries/property-management-housing",
   },
   {
     title: "Nonprofits & Public Organizations",
     text:
       "Community centers, libraries, and social service agencies run open buildings with small staffs and tight budgets.",
     image: "/assets/images/industries/nonprofit.jpg",
-    href: "/industries#nonprofits",
+    href: "/industries/nonprofits-public-organizations",
   },
 ];
 
