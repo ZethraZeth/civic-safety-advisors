@@ -1,7 +1,7 @@
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { locationSummaries } from "@/lib/locations";
 import Link from "next/link";
-import { MapPin } from "lucide-react";
+import Image from "next/image";
 
 export function ServiceAreas() {
   return (
@@ -20,12 +20,18 @@ export function ServiceAreas() {
               href={`/locations/${location.slug}`}
               className="group rounded-xl border border-slate-200 bg-white p-6 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
             >
-              <div className="flex items-center gap-3">
-                <MapPin className="h-6 w-6 text-brass-600" />
-                <h3 className="text-lg font-bold text-ink-900 group-hover:text-brass-600">
-                  {location.name}
-                </h3>
+              <div className="relative h-24 w-full">
+                <Image
+                  src={location.image}
+                  alt=""
+                  fill
+                  sizes="(min-width: 1024px) 18rem, (min-width: 640px) 45vw, 100vw"
+                  className="object-contain object-left transition group-hover:scale-[1.03]"
+                />
               </div>
+              <h3 className="mt-4 text-lg font-bold text-ink-900 group-hover:text-brass-600">
+                {location.name}
+              </h3>
               <p className="mt-3 text-sm leading-6 text-slate-600">
                 Public safety consulting for {location.abbreviation} municipalities, nonprofits, schools, and healthcare organizations.
               </p>

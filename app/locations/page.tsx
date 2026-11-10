@@ -3,7 +3,7 @@ import { BOOKING_URL } from "@/lib/site";
 import { Card } from "@/components/ui/Card";
 import { locations, locationSummaries } from "@/lib/locations";
 import Link from "next/link";
-import { MapPin } from "lucide-react";
+import Image from "next/image";
 
 export const metadata = {
   title: "Service Areas: Connecticut, New York, Massachusetts, Rhode Island",
@@ -47,11 +47,15 @@ export default function LocationsPage() {
           {locationSummaries.map((location) => (
             <Link key={location.slug} href={`/locations/${location.slug}`}>
               <Card hover className="h-full">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-md bg-brass-500/10 text-brass-600">
-                      <MapPin className="h-6 w-6" />
-                    </div>
+                <div className="flex items-start gap-5">
+                  <div className="relative h-20 w-24 flex-shrink-0 sm:h-24 sm:w-32">
+                    <Image
+                      src={location.image}
+                      alt={`Outline of ${location.name}`}
+                      fill
+                      sizes="128px"
+                      className="object-contain"
+                    />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-ink-900">

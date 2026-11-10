@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/Card";
 import { locations, getLocationBySlug } from "@/lib/locations";
 import { industries } from "@/lib/industries";
 import Link from "next/link";
+import Image from "next/image";
 import * as Icons from "lucide-react";
 import { notFound } from "next/navigation";
 import { JsonLd, locationServiceLd, breadcrumbLd } from "@/components/seo/JsonLd";
@@ -43,17 +44,29 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
       {/* Hero Section */}
       <section className="bg-slate-50">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-          <div className="max-w-3xl">
-            <div className="text-sm font-semibold tracking-wide text-brass-600 uppercase">
-              Service Area
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:gap-16">
+            <div className="max-w-3xl">
+              <div className="text-sm font-semibold tracking-wide text-brass-600 uppercase">
+                Service Area
+              </div>
+              <h1 className="mt-2 text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl">
+                Security Consulting in {location.name}
+              </h1>
+              <p className="mt-5 text-lg leading-8 text-slate-700">
+                {location.answer ?? location.description}
+              </p>
+              {location.answer && <p className="mt-4 text-base leading-7 text-slate-600">{location.description}</p>}
             </div>
-            <h1 className="mt-2 text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl">
-              Security Consulting in {location.name}
-            </h1>
-            <p className="mt-5 text-lg leading-8 text-slate-700">
-              {location.answer ?? location.description}
-            </p>
-            {location.answer && <p className="mt-4 text-base leading-7 text-slate-600">{location.description}</p>}
+            <div className="relative mx-auto aspect-[4/3] w-full max-w-md lg:max-w-none">
+              <Image
+                src={location.image}
+                alt={`Outline of ${location.name}`}
+                fill
+                priority
+                sizes="(min-width: 1024px) 40vw, (min-width: 640px) 28rem, 100vw"
+                className="object-contain drop-shadow-md"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -189,8 +202,11 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
                   <Link
                     key={loc.slug}
                     href={`/locations/${loc.slug}`}
-                    className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-ink-900 hover:border-brass-500 hover:text-brass-600 transition"
+                    className="inline-flex items-center gap-3 rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-brass-500 hover:text-brass-600 transition"
                   >
+                    <span className="relative h-8 w-10 shrink-0">
+                      <Image src={loc.image} alt="" fill sizes="40px" className="object-contain" />
+                    </span>
                     {loc.name}
                   </Link>
                 ))}

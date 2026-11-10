@@ -7,6 +7,8 @@ export interface Location {
   answer?: string;
   localContext: string;
   metaDescription: string;
+  /** Transparent PNG of the state outline, navy fill with brass stroke. */
+  image: string;
   whoWeServe: string[];
   keyServices: Array<{
     title: string;
@@ -23,6 +25,7 @@ export const locations: Location[] = [
     abbreviation: "CT",
     description: "Connecticut is where we are based and where most of our work is. We work with municipalities, nonprofits, schools, houses of worship, and housing providers across the state.",
     localContext: "Connecticut runs its nonprofit security grants through DESPP's Division of Emergency Management and Homeland Security, and it relies on municipal police and fire departments whose resources and response times differ from New Haven and Hartford to the suburbs and small towns. We know those agencies and those programs, and we build plans around what your town will actually do when called.",
+    image: "/assets/images/locations/connecticut.png",
     metaDescription: "Public safety consulting in Connecticut. Serving municipalities, nonprofits, schools, and healthcare organizations across CT with training, audits, and emergency planning.",
     whoWeServe: [
       "Connecticut municipalities and local government agencies",
@@ -67,6 +70,7 @@ export const locations: Location[] = [
     abbreviation: "NY",
     description: "We work with New York municipalities, nonprofits, schools, houses of worship, and healthcare facilities, from Westchester and the Hudson Valley to New York City.",
     localContext: "A plan that works for a congregation in New York City will not work unchanged for a school district upstate. Response times, the agencies involved, and the security grant programs differ. We write each plan for the police department and emergency management office that will actually respond, and we prepare assessments in the format New York's NSGP applications require.",
+    image: "/assets/images/locations/new-york.png",
     metaDescription: "Public safety consulting in New York. Serving NY municipalities, nonprofits, schools, and healthcare with training, emergency planning, and security assessments.",
     whoWeServe: [
       "New York municipalities and local government",
@@ -111,6 +115,7 @@ export const locations: Location[] = [
     abbreviation: "MA",
     description: "We work with Massachusetts municipalities, schools, nonprofits, houses of worship, and healthcare organizations, on site in the Boston area and western Massachusetts and remotely statewide.",
     localContext: "Massachusetts has well-resourced public safety agencies and an active emergency management structure, which means an organization may be paying privately for something its town already provides. We start by finding those overlaps, then identify the private measures that would reduce risk, and we write reports to support the state's NSGP applications and insurer requirements.",
+    image: "/assets/images/locations/massachusetts.png",
     metaDescription: "Public safety consulting in Massachusetts. Serving MA municipalities, nonprofits, schools, and healthcare with emergency planning, training, and security strategy.",
     whoWeServe: [
       "Massachusetts municipalities and local agencies",
@@ -155,6 +160,7 @@ export const locations: Location[] = [
     abbreviation: "RI",
     description: "We work with Rhode Island municipalities, nonprofits, schools, houses of worship, and community organizations statewide, on site.",
     localContext: "Rhode Island is small, and its municipal police, fire, and emergency management offices work closely with one another. We build plans around the people who will actually show up, and we write assessments to support NSGP applications administered by the Rhode Island Emergency Management Agency.",
+    image: "/assets/images/locations/rhode-island.png",
     metaDescription: "Public safety consulting in Rhode Island. Serving RI municipalities, nonprofits, schools, and healthcare with training, planning, and security coordination.",
     whoWeServe: [
       "Rhode Island municipalities and local government",
@@ -202,5 +208,6 @@ export const locationSummaries = locations.map(loc => ({
   slug: loc.slug,
   name: loc.name,
   abbreviation: loc.abbreviation,
-  description: loc.description
+  description: loc.description,
+  image: loc.image
 }));
