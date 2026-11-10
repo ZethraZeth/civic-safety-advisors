@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Byline } from "@/components/blog/Byline";
-import { JsonLd, articleLd, breadcrumbLd } from "@/components/seo/JsonLd";
+import { JsonLd, articleLd, breadcrumbLd, faqLd } from "@/components/seo/JsonLd";
 
 export async function generateStaticParams() {
   return recentPosts.map((post) => ({
@@ -50,7 +50,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <main>
-      <JsonLd data={[articleLd(post), breadcrumbLd([{ name: "Blog", path: "/blog" }, { name: post.title, path: `/blog/${post.slug}` }])]} />
+      <JsonLd data={[articleLd(post), breadcrumbLd([{ name: "Blog", path: "/blog" }, { name: post.title, path: `/blog/${post.slug}` }]), ...(post.faqs?.length ? [faqLd(post.faqs)] : [])]} />
       {/* Post Header */}
       <article className="bg-slate-50">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
@@ -89,6 +89,19 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           className="prose prose-slate prose-lg max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+        {post.faqs && post.faqs.length > 0 && (
+          <section className="mt-14 border-t border-slate-200 pt-10" aria-labelledby="post-faq">
+            <h2 id="post-faq" className="text-2xl font-bold text-ink-900">Questions people ask</h2>
+            <dl className="mt-6 space-y-6">
+              {post.faqs.map((f) => (
+                <div key={f.question}>
+                  <dt className="font-bold text-ink-900">{f.question}</dt>
+                  <dd className="mt-1.5 text-base leading-7 text-slate-600">{f.answer}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
       </article>
 
       {/* Related Posts */}

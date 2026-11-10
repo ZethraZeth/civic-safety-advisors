@@ -44,8 +44,8 @@ export const services: Service[] = [
   {
     slug: "workplace-violence-employee-safety",
     answer: "A workplace violence and employee safety assessment identifies where your staff are exposed to aggression from the public, clients, or residents, including lone work, home visits, and front-desk interactions. You get written procedures, a reporting process, and training priorities that satisfy OSHA's general duty expectations and your insurer's questions.",
-    title: "Workplace Violence & Employee Safety Assessment",
-    shortDescription: "Assess the risks your staff face from the public, clients, and residents, including lone-worker exposure, and build the procedures to manage them.",
+    title: "Workplace Violence Risk Assessment & Employee Safety",
+    shortDescription: "A workplace violence risk assessment by site and by role, including lone-worker exposure, with the written prevention program to manage what it finds.",
     fullDescription: "Most security assessments focus on the building. This one focuses on the people who work in it. We evaluate how your staff interact with the public, clients, residents, and applicants; where and when they work alone; what happens after hours; how incidents are reported and escalated; and what training and procedures exist today. The result is a written workplace violence prevention program sized to your organization, with recommendations ranked by cost and impact, written so it can be shared with leadership, your board, and your insurance broker.",
     icon: "UserCheck",
     category: "policy",
