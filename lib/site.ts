@@ -10,6 +10,8 @@ export const STATE = "CT";
 export const SERVICE_STATES = ["Connecticut", "New York", "Massachusetts", "Rhode Island"];
 /** Public (teaser) assessment start page, served on this domain and proxied to the assessment app. */
 export const ASSESS_URL = "/assessment/start";
+/** Google Calendar appointment schedule: free 30-minute consultation. */
+export const BOOKING_URL = "https://calendar.app.google/x4Cgc6t4JGdN3Ftu7";
 export const OG_IMAGE = "/og.jpg";
 
 export const FOUNDER = {

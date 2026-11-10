@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BOOKING_URL } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
 import { TrustIndicators } from "@/components/home/TrustIndicators";
 import { ServicesOverview } from "@/components/home/ServicesOverview";
@@ -53,7 +54,7 @@ export default function HomePage() {
               </p>
               <div className="mt-8">
                 <Button
-                  href="/contact"
+                  href={BOOKING_URL}
                   variant="secondary"
                   className="justify-center bg-white/12 border-white/60 text-white hover:bg-white/22 hover:border-white focus:ring-white/50"
                 >

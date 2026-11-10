@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { BOOKING_URL } from "@/lib/site";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
@@ -170,7 +171,7 @@ export function Header() {
           </nav>
 
           <div className="desktop-button">
-            <Button href="/contact" variant="brass" className="whitespace-nowrap px-4">Schedule a Consultation</Button>
+            <Button href={BOOKING_URL} variant="brass" className="whitespace-nowrap px-4">Schedule a Consultation</Button>
           </div>
 
           <button
@@ -275,7 +276,7 @@ export function Header() {
                 </div>
               ))}
               <div className="pt-2">
-                <Button href="/contact" variant="brass" className="w-full justify-center">
+                <Button href={BOOKING_URL} variant="brass" className="w-full justify-center">
                   Schedule a Consultation
                 </Button>
               </div>

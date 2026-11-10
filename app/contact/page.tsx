@@ -1,5 +1,7 @@
 import { ContactForm } from "@/components/ui/ContactForm";
 import { Card } from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
+import { BOOKING_URL } from "@/lib/site";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 export const metadata = {
@@ -103,9 +105,10 @@ export default function ContactPage() {
                 Free Initial Consultation
               </h3>
               <p className="mt-2 text-sm text-slate-600">
-                Not sure where to start? Schedule a complimentary 30-minute call to
+                Not sure where to start? Pick a time for a complimentary 30-minute call to
                 discuss your organization's security needs and learn how we can help.
               </p>
+              <Button href={BOOKING_URL} variant="brass" className="mt-4 w-full justify-center">Book a 30-minute call</Button>
             </Card>
 
             <Card>

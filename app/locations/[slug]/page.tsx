@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import { BOOKING_URL } from "@/lib/site";
 import { Card } from "@/components/ui/Card";
 import { locations, getLocationBySlug } from "@/lib/locations";
 import { industries } from "@/lib/industries";
@@ -156,7 +157,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center">
             <Button
-              href="/contact"
+              href={BOOKING_URL}
               variant="brass"
             >
               Schedule a Consultation

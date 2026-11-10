@@ -1,4 +1,5 @@
 import { recentPosts, categoryLabels, getPostBySlug } from "@/lib/blog";
+import { BOOKING_URL } from "@/lib/site";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
@@ -118,7 +119,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center">
             <Button
-              href="/contact"
+              href={BOOKING_URL}
               variant="primary"
               className="bg-brass-500 hover:bg-brass-600 focus:ring-brass-500"
             >

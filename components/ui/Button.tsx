@@ -26,8 +26,9 @@ export function Button({
       "bg-brass-500 text-ink-900 border border-brass-500 hover:bg-brass-600 hover:border-brass-600 focus:ring-white/60 shadow-soft",
   };
 
+  const external = /^https?:\/\//.test(href);
   return (
-    <Link href={href} className={clsx(base, styles[variant], className)}>
+    <Link href={href} className={clsx(base, styles[variant], className)} {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
       {children}
     </Link>
   );

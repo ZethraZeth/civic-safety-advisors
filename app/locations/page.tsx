@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import { BOOKING_URL } from "@/lib/site";
 import { Card } from "@/components/ui/Card";
 import { locations, locationSummaries } from "@/lib/locations";
 import Link from "next/link";
@@ -137,7 +138,7 @@ export default function LocationsPage() {
             </p>
             <div className="mt-8">
               <Button
-                href="/contact"
+                href={BOOKING_URL}
                 variant="brass"
               >
                 Schedule a Consultation
